@@ -59,6 +59,7 @@
 		E6805ECD182876950043B6DD /* RMSWebViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EB7182876950043B6DD /* RMSWebViewCell.m */; };
 		E6805ED1182876B60043B6DD /* RMSButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6805ECF182876B60043B6DD /* RMSButtonCell.xib */; };
 		E6805ED2182876B60043B6DD /* RMSDatePickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6805ED0182876B60043B6DD /* RMSDatePickerView.storyboard */; };
+		E6805ED418289AFE0043B6DD /* RMSTextEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6805ED318289AFE0043B6DD /* RMSTextEntryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +162,7 @@
 		E6805EB7182876950043B6DD /* RMSWebViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSWebViewCell.m; sourceTree = "<group>"; };
 		E6805ECF182876B60043B6DD /* RMSButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSButtonCell.xib; sourceTree = "<group>"; };
 		E6805ED0182876B60043B6DD /* RMSDatePickerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RMSDatePickerView.storyboard; sourceTree = "<group>"; };
+		E6805ED318289AFE0043B6DD /* RMSTextEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSTextEntryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -413,6 +415,7 @@
 		E6805ECE182876B60043B6DD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E6805ED318289AFE0043B6DD /* RMSTextEntryCell.xib */,
 				E6805ECF182876B60043B6DD /* RMSButtonCell.xib */,
 				E6805ED0182876B60043B6DD /* RMSDatePickerView.storyboard */,
 			);
@@ -506,6 +509,7 @@
 				E6805ECB182876950043B6DD /* RMSTextEntryCell.xib in Resources */,
 				E6805ED1182876B60043B6DD /* RMSButtonCell.xib in Resources */,
 				E6805ED2182876B60043B6DD /* RMSDatePickerView.storyboard in Resources */,
+				E6805ED418289AFE0043B6DD /* RMSTextEntryCell.xib in Resources */,
 				E6805E831828759B0043B6DD /* RMSSettingsViewController.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
