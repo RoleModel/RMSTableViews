@@ -59,7 +59,6 @@ NSString * const RMSResponderTraversalEnabledUserInfoKey = @"RMSResponderTravers
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
-    DLog(@"");
     if (self.endEditingBlock != NULL) {
         self.endEditingBlock(textField.text);
     }
