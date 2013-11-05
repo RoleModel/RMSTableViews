@@ -82,7 +82,7 @@
 + (UITableViewCellStyle)cellStyle;
 
 /*!
- \brief Factor method used to instantiate form cells
+ \brief Factory method used to instantiate form cells
  
  Subclasses may extend the behavior of cell.
  */
