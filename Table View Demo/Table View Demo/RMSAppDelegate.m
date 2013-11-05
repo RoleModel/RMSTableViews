@@ -1,6 +1,5 @@
 //
 //  RMSAppDelegate.m
-//  Tabulator
 //
 //  Created by Tony Ingraldi on 10/25/13.
 //  Copyright (c) 2013 RoleModel Software, Inc. All rights reserved.

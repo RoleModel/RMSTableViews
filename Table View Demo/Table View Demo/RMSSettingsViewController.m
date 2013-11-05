@@ -1,6 +1,5 @@
 //
 //  RMSSettingsViewController.m
-//  Tabulator
 //
 //  Created by Tony Ingraldi on 10/29/13.
 //  Copyright (c) 2013 RoleModel Software, Inc. All rights reserved.
@@ -8,9 +7,9 @@
 
 #import "RMSSettingsViewController.h"
 
-NSString * const RMSDefaultsAwesomeKey = @"com.rolemodelsoftware.tabulator.awesome";
-NSString * const RMSDefaultsPasswordExpirationDaysKey = @"com.rolemodelsoftware.tabulator.passwordExpirationDays";
-NSString * const RMSDefaultsFavoriteColorKey = @"com.rolemodelsoftware.tabulator.favoriteColor";
+NSString * const RMSDefaultsAwesomeKey = @"AwesomeKey";
+NSString * const RMSDefaultsPasswordExpirationDaysKey = @"PasswordExpirationDaysKey";
+NSString * const RMSDefaultsFavoriteColorKey = @"FavoriteColorKey";
 
 @interface RMSSettingsViewController ()
 
