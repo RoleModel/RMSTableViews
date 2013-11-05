@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E63312AF182871A700FBFBCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63312AE182871A700FBFBCE /* Foundation.framework */; };
+		E63312B1182871A700FBFBCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63312B0182871A700FBFBCE /* CoreGraphics.framework */; };
+		E63312B3182871A700FBFBCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63312B2182871A700FBFBCE /* UIKit.framework */; };
+		E63312B9182871A700FBFBCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E63312B7182871A700FBFBCE /* InfoPlist.strings */; };
+		E63312BB182871A700FBFBCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E63312BA182871A700FBFBCE /* main.m */; };
+		E63312BF182871A700FBFBCE /* RMSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E63312BE182871A700FBFBCE /* RMSAppDelegate.m */; };
+		E63312C1182871A700FBFBCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E63312C0182871A700FBFBCE /* Images.xcassets */; };
+		E63312C8182871A700FBFBCE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63312C7182871A700FBFBCE /* XCTest.framework */; };
+		E63312C9182871A700FBFBCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63312AE182871A700FBFBCE /* Foundation.framework */; };
+		E63312CA182871A700FBFBCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63312B2182871A700FBFBCE /* UIKit.framework */; };
+		E63312D2182871A700FBFBCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E63312D0182871A700FBFBCE /* InfoPlist.strings */; };
+		E63312D4182871A700FBFBCE /* Table_View_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E63312D3182871A700FBFBCE /* Table_View_DemoTests.m */; };
+		E6805E771828759B0043B6DD /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E5C1828759B0043B6DD /* ProfileViewController.m */; };
+		E6805E781828759B0043B6DD /* ProfileViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6805E5D1828759B0043B6DD /* ProfileViewController.plist */; };
+		E6805E791828759B0043B6DD /* RMSHandicapPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E5F1828759B0043B6DD /* RMSHandicapPickerCell.m */; };
+		E6805E7A1828759B0043B6DD /* RMSHeightPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E611828759B0043B6DD /* RMSHeightPickerCell.m */; };
+		E6805E7B1828759B0043B6DD /* RMSHeightPickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6805E621828759B0043B6DD /* RMSHeightPickerView.storyboard */; };
+		E6805E7C1828759B0043B6DD /* RMSHeightPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E641828759B0043B6DD /* RMSHeightPickerViewController.m */; };
+		E6805E7D1828759B0043B6DD /* RMSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E661828759B0043B6DD /* RMSModel.m */; };
+		E6805E7E1828759B0043B6DD /* RMSNamedColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E681828759B0043B6DD /* RMSNamedColor.m */; };
+		E6805E7F1828759B0043B6DD /* RMSNamedColorPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E6A1828759B0043B6DD /* RMSNamedColorPickerCell.m */; };
+		E6805E801828759B0043B6DD /* RMSProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E6C1828759B0043B6DD /* RMSProfile.m */; };
+		E6805E811828759B0043B6DD /* RMSSettingsViewController.json in Resources */ = {isa = PBXBuildFile; fileRef = E6805E6E1828759B0043B6DD /* RMSSettingsViewController.json */; };
+		E6805E821828759B0043B6DD /* RMSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E6F1828759B0043B6DD /* RMSSettingsViewController.m */; };
+		E6805E831828759B0043B6DD /* RMSSettingsViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6805E701828759B0043B6DD /* RMSSettingsViewController.plist */; };
+		E6805E841828759B0043B6DD /* RMSWordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E721828759B0043B6DD /* RMSWordCell.m */; };
+		E6805E851828759B0043B6DD /* RMSWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E741828759B0043B6DD /* RMSWordViewController.m */; };
+		E6805E861828759B0043B6DD /* UIAlertView+RMS.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E761828759B0043B6DD /* UIAlertView+RMS.m */; };
+		E6805EB8182876950043B6DD /* RMSArrayPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E8E182876950043B6DD /* RMSArrayPickerCell.m */; };
+		E6805EB9182876950043B6DD /* RMSArrayPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E90182876950043B6DD /* RMSArrayPickerController.m */; };
+		E6805EBA182876950043B6DD /* RMSButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E92182876950043B6DD /* RMSButtonCell.m */; };
+		E6805EBB182876950043B6DD /* RMSButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6805E93182876950043B6DD /* RMSButtonCell.xib */; };
+		E6805EBC182876950043B6DD /* RMSDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E95182876950043B6DD /* RMSDataCell.m */; };
+		E6805EBD182876950043B6DD /* RMSDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E97182876950043B6DD /* RMSDatePickerCell.m */; };
+		E6805EBE182876950043B6DD /* RMSDatePickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6805E98182876950043B6DD /* RMSDatePickerView.storyboard */; };
+		E6805EBF182876950043B6DD /* RMSDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E9A182876950043B6DD /* RMSDatePickerViewController.m */; };
+		E6805EC0182876950043B6DD /* RMSDynamicSection.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E9C182876950043B6DD /* RMSDynamicSection.m */; };
+		E6805EC1182876950043B6DD /* RMSFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E9F182876950043B6DD /* RMSFormCell.m */; };
+		E6805EC2182876950043B6DD /* RMSFormSection.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EA1182876950043B6DD /* RMSFormSection.m */; };
+		E6805EC3182876950043B6DD /* RMSFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EA3182876950043B6DD /* RMSFormViewController.m */; };
+		E6805EC4182876950043B6DD /* RMSNavigationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EA5182876950043B6DD /* RMSNavigationCell.m */; };
+		E6805EC5182876950043B6DD /* RMSRightDetailFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EA7182876950043B6DD /* RMSRightDetailFormCell.m */; };
+		E6805EC6182876950043B6DD /* RMSSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EA9182876950043B6DD /* RMSSwitchCell.m */; };
+		E6805EC7182876950043B6DD /* RMSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EAC182876950043B6DD /* RMSTableViewController.m */; };
+		E6805EC8182876950043B6DD /* RMSTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EAE182876950043B6DD /* RMSTableViewSection.m */; };
+		E6805EC9182876950043B6DD /* RMSTargetActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EB0182876950043B6DD /* RMSTargetActionCell.m */; };
+		E6805ECA182876950043B6DD /* RMSTextEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EB2182876950043B6DD /* RMSTextEntryCell.m */; };
+		E6805ECB182876950043B6DD /* RMSTextEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6805EB3182876950043B6DD /* RMSTextEntryCell.xib */; };
+		E6805ECC182876950043B6DD /* RMSTextFieldObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EB5182876950043B6DD /* RMSTextFieldObserver.m */; };
+		E6805ECD182876950043B6DD /* RMSWebViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EB7182876950043B6DD /* RMSWebViewCell.m */; };
+		E6805ED1182876B60043B6DD /* RMSButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6805ECF182876B60043B6DD /* RMSButtonCell.xib */; };
+		E6805ED2182876B60043B6DD /* RMSDatePickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6805ED0182876B60043B6DD /* RMSDatePickerView.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E63312CB182871A700FBFBCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63312A3182871A700FBFBCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E63312AA182871A700FBFBCE;
+			remoteInfo = "Table View Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E63312AB182871A700FBFBCE /* Table View Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table View Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63312AE182871A700FBFBCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E63312B0182871A700FBFBCE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E63312B2182871A700FBFBCE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E63312B6182871A700FBFBCE /* Table View Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Table View Demo-Info.plist"; sourceTree = "<group>"; };
+		E63312B8182871A700FBFBCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E63312BA182871A700FBFBCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E63312BC182871A700FBFBCE /* Table View Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Table View Demo-Prefix.pch"; sourceTree = "<group>"; };
+		E63312BD182871A700FBFBCE /* RMSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMSAppDelegate.h; sourceTree = "<group>"; };
+		E63312BE182871A700FBFBCE /* RMSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMSAppDelegate.m; sourceTree = "<group>"; };
+		E63312C0182871A700FBFBCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E63312C6182871A700FBFBCE /* Table View DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Table View DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63312C7182871A700FBFBCE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E63312CF182871A700FBFBCE /* Table View DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Table View DemoTests-Info.plist"; sourceTree = "<group>"; };
+		E63312D1182871A700FBFBCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E63312D3182871A700FBFBCE /* Table_View_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Table_View_DemoTests.m; sourceTree = "<group>"; };
+		E6805E5B1828759B0043B6DD /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		E6805E5C1828759B0043B6DD /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		E6805E5D1828759B0043B6DD /* ProfileViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProfileViewController.plist; sourceTree = "<group>"; };
+		E6805E5E1828759B0043B6DD /* RMSHandicapPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSHandicapPickerCell.h; sourceTree = "<group>"; };
+		E6805E5F1828759B0043B6DD /* RMSHandicapPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSHandicapPickerCell.m; sourceTree = "<group>"; };
+		E6805E601828759B0043B6DD /* RMSHeightPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSHeightPickerCell.h; sourceTree = "<group>"; };
+		E6805E611828759B0043B6DD /* RMSHeightPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSHeightPickerCell.m; sourceTree = "<group>"; };
+		E6805E621828759B0043B6DD /* RMSHeightPickerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RMSHeightPickerView.storyboard; sourceTree = "<group>"; };
+		E6805E631828759B0043B6DD /* RMSHeightPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSHeightPickerViewController.h; sourceTree = "<group>"; };
+		E6805E641828759B0043B6DD /* RMSHeightPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSHeightPickerViewController.m; sourceTree = "<group>"; };
+		E6805E651828759B0043B6DD /* RMSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSModel.h; sourceTree = "<group>"; };
+		E6805E661828759B0043B6DD /* RMSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSModel.m; sourceTree = "<group>"; };
+		E6805E671828759B0043B6DD /* RMSNamedColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSNamedColor.h; sourceTree = "<group>"; };
+		E6805E681828759B0043B6DD /* RMSNamedColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSNamedColor.m; sourceTree = "<group>"; };
+		E6805E691828759B0043B6DD /* RMSNamedColorPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSNamedColorPickerCell.h; sourceTree = "<group>"; };
+		E6805E6A1828759B0043B6DD /* RMSNamedColorPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSNamedColorPickerCell.m; sourceTree = "<group>"; };
+		E6805E6B1828759B0043B6DD /* RMSProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSProfile.h; sourceTree = "<group>"; };
+		E6805E6C1828759B0043B6DD /* RMSProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSProfile.m; sourceTree = "<group>"; };
+		E6805E6D1828759B0043B6DD /* RMSSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSSettingsViewController.h; sourceTree = "<group>"; };
+		E6805E6E1828759B0043B6DD /* RMSSettingsViewController.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RMSSettingsViewController.json; sourceTree = "<group>"; };
+		E6805E6F1828759B0043B6DD /* RMSSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSSettingsViewController.m; sourceTree = "<group>"; };
+		E6805E701828759B0043B6DD /* RMSSettingsViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RMSSettingsViewController.plist; sourceTree = "<group>"; };
+		E6805E711828759B0043B6DD /* RMSWordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSWordCell.h; sourceTree = "<group>"; };
+		E6805E721828759B0043B6DD /* RMSWordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSWordCell.m; sourceTree = "<group>"; };
+		E6805E731828759B0043B6DD /* RMSWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSWordViewController.h; sourceTree = "<group>"; };
+		E6805E741828759B0043B6DD /* RMSWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSWordViewController.m; sourceTree = "<group>"; };
+		E6805E751828759B0043B6DD /* UIAlertView+RMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+RMS.h"; sourceTree = "<group>"; };
+		E6805E761828759B0043B6DD /* UIAlertView+RMS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+RMS.m"; sourceTree = "<group>"; };
+		E6805E8D182876950043B6DD /* RMSArrayPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSArrayPickerCell.h; sourceTree = "<group>"; };
+		E6805E8E182876950043B6DD /* RMSArrayPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSArrayPickerCell.m; sourceTree = "<group>"; };
+		E6805E8F182876950043B6DD /* RMSArrayPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSArrayPickerController.h; sourceTree = "<group>"; };
+		E6805E90182876950043B6DD /* RMSArrayPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSArrayPickerController.m; sourceTree = "<group>"; };
+		E6805E91182876950043B6DD /* RMSButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSButtonCell.h; sourceTree = "<group>"; };
+		E6805E92182876950043B6DD /* RMSButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSButtonCell.m; sourceTree = "<group>"; };
+		E6805E93182876950043B6DD /* RMSButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSButtonCell.xib; sourceTree = "<group>"; };
+		E6805E94182876950043B6DD /* RMSDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSDataCell.h; sourceTree = "<group>"; };
+		E6805E95182876950043B6DD /* RMSDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDataCell.m; sourceTree = "<group>"; };
+		E6805E96182876950043B6DD /* RMSDatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSDatePickerCell.h; sourceTree = "<group>"; };
+		E6805E97182876950043B6DD /* RMSDatePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDatePickerCell.m; sourceTree = "<group>"; };
+		E6805E98182876950043B6DD /* RMSDatePickerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RMSDatePickerView.storyboard; sourceTree = "<group>"; };
+		E6805E99182876950043B6DD /* RMSDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSDatePickerViewController.h; sourceTree = "<group>"; };
+		E6805E9A182876950043B6DD /* RMSDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDatePickerViewController.m; sourceTree = "<group>"; };
+		E6805E9B182876950043B6DD /* RMSDynamicSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSDynamicSection.h; sourceTree = "<group>"; };
+		E6805E9C182876950043B6DD /* RMSDynamicSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDynamicSection.m; sourceTree = "<group>"; };
+		E6805E9D182876950043B6DD /* RMSDynamicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSDynamicTableViewCell.h; sourceTree = "<group>"; };
+		E6805E9E182876950043B6DD /* RMSFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSFormCell.h; sourceTree = "<group>"; };
+		E6805E9F182876950043B6DD /* RMSFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSFormCell.m; sourceTree = "<group>"; };
+		E6805EA0182876950043B6DD /* RMSFormSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSFormSection.h; sourceTree = "<group>"; };
+		E6805EA1182876950043B6DD /* RMSFormSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSFormSection.m; sourceTree = "<group>"; };
+		E6805EA2182876950043B6DD /* RMSFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSFormViewController.h; sourceTree = "<group>"; };
+		E6805EA3182876950043B6DD /* RMSFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSFormViewController.m; sourceTree = "<group>"; };
+		E6805EA4182876950043B6DD /* RMSNavigationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSNavigationCell.h; sourceTree = "<group>"; };
+		E6805EA5182876950043B6DD /* RMSNavigationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSNavigationCell.m; sourceTree = "<group>"; };
+		E6805EA6182876950043B6DD /* RMSRightDetailFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSRightDetailFormCell.h; sourceTree = "<group>"; };
+		E6805EA7182876950043B6DD /* RMSRightDetailFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSRightDetailFormCell.m; sourceTree = "<group>"; };
+		E6805EA8182876950043B6DD /* RMSSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSSwitchCell.h; sourceTree = "<group>"; };
+		E6805EA9182876950043B6DD /* RMSSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSSwitchCell.m; sourceTree = "<group>"; };
+		E6805EAA182876950043B6DD /* RMSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSTableViewCell.h; sourceTree = "<group>"; };
+		E6805EAB182876950043B6DD /* RMSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSTableViewController.h; sourceTree = "<group>"; };
+		E6805EAC182876950043B6DD /* RMSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSTableViewController.m; sourceTree = "<group>"; };
+		E6805EAD182876950043B6DD /* RMSTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSTableViewSection.h; sourceTree = "<group>"; };
+		E6805EAE182876950043B6DD /* RMSTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSTableViewSection.m; sourceTree = "<group>"; };
+		E6805EAF182876950043B6DD /* RMSTargetActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSTargetActionCell.h; sourceTree = "<group>"; };
+		E6805EB0182876950043B6DD /* RMSTargetActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSTargetActionCell.m; sourceTree = "<group>"; };
+		E6805EB1182876950043B6DD /* RMSTextEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSTextEntryCell.h; sourceTree = "<group>"; };
+		E6805EB2182876950043B6DD /* RMSTextEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSTextEntryCell.m; sourceTree = "<group>"; };
+		E6805EB3182876950043B6DD /* RMSTextEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSTextEntryCell.xib; sourceTree = "<group>"; };
+		E6805EB4182876950043B6DD /* RMSTextFieldObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSTextFieldObserver.h; sourceTree = "<group>"; };
+		E6805EB5182876950043B6DD /* RMSTextFieldObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSTextFieldObserver.m; sourceTree = "<group>"; };
+		E6805EB6182876950043B6DD /* RMSWebViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSWebViewCell.h; sourceTree = "<group>"; };
+		E6805EB7182876950043B6DD /* RMSWebViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSWebViewCell.m; sourceTree = "<group>"; };
+		E6805ECF182876B60043B6DD /* RMSButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSButtonCell.xib; sourceTree = "<group>"; };
+		E6805ED0182876B60043B6DD /* RMSDatePickerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RMSDatePickerView.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E63312A8182871A700FBFBCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63312B1182871A700FBFBCE /* CoreGraphics.framework in Frameworks */,
+				E63312B3182871A700FBFBCE /* UIKit.framework in Frameworks */,
+				E63312AF182871A700FBFBCE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63312C3182871A700FBFBCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63312C8182871A700FBFBCE /* XCTest.framework in Frameworks */,
+				E63312CA182871A700FBFBCE /* UIKit.framework in Frameworks */,
+				E63312C9182871A700FBFBCE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E63312A2182871A700FBFBCE = {
+			isa = PBXGroup;
+			children = (
+				E63312B4182871A700FBFBCE /* Table View Demo */,
+				E63312CD182871A700FBFBCE /* Table View DemoTests */,
+				E63312AD182871A700FBFBCE /* Frameworks */,
+				E63312AC182871A700FBFBCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E63312AC182871A700FBFBCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E63312AB182871A700FBFBCE /* Table View Demo.app */,
+				E63312C6182871A700FBFBCE /* Table View DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E63312AD182871A700FBFBCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E63312AE182871A700FBFBCE /* Foundation.framework */,
+				E63312B0182871A700FBFBCE /* CoreGraphics.framework */,
+				E63312B2182871A700FBFBCE /* UIKit.framework */,
+				E63312C7182871A700FBFBCE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E63312B4182871A700FBFBCE /* Table View Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E8C182876950043B6DD /* RMSTableViews */,
+				E63312BD182871A700FBFBCE /* RMSAppDelegate.h */,
+				E63312BE182871A700FBFBCE /* RMSAppDelegate.m */,
+				E6805E52182875410043B6DD /* Model */,
+				E6805E54182875410043B6DD /* Views */,
+				E6805E55182875420043B6DD /* Controllers */,
+				E6805E57182875420043B6DD /* Resources */,
+				E6805E59182875420043B6DD /* SDK Categories */,
+				E63312B5182871A700FBFBCE /* Supporting Files */,
+			);
+			path = "Table View Demo";
+			sourceTree = "<group>";
+		};
+		E63312B5182871A700FBFBCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E63312B6182871A700FBFBCE /* Table View Demo-Info.plist */,
+				E63312B7182871A700FBFBCE /* InfoPlist.strings */,
+				E63312BA182871A700FBFBCE /* main.m */,
+				E63312BC182871A700FBFBCE /* Table View Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E63312CD182871A700FBFBCE /* Table View DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E63312D3182871A700FBFBCE /* Table_View_DemoTests.m */,
+				E63312CE182871A700FBFBCE /* Supporting Files */,
+			);
+			path = "Table View DemoTests";
+			sourceTree = "<group>";
+		};
+		E63312CE182871A700FBFBCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E63312CF182871A700FBFBCE /* Table View DemoTests-Info.plist */,
+				E63312D0182871A700FBFBCE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6805E52182875410043B6DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E651828759B0043B6DD /* RMSModel.h */,
+				E6805E661828759B0043B6DD /* RMSModel.m */,
+				E6805E671828759B0043B6DD /* RMSNamedColor.h */,
+				E6805E681828759B0043B6DD /* RMSNamedColor.m */,
+				E6805E6B1828759B0043B6DD /* RMSProfile.h */,
+				E6805E6C1828759B0043B6DD /* RMSProfile.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E6805E54182875410043B6DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E5E1828759B0043B6DD /* RMSHandicapPickerCell.h */,
+				E6805E5F1828759B0043B6DD /* RMSHandicapPickerCell.m */,
+				E6805E601828759B0043B6DD /* RMSHeightPickerCell.h */,
+				E6805E611828759B0043B6DD /* RMSHeightPickerCell.m */,
+				E6805E691828759B0043B6DD /* RMSNamedColorPickerCell.h */,
+				E6805E6A1828759B0043B6DD /* RMSNamedColorPickerCell.m */,
+				E6805E711828759B0043B6DD /* RMSWordCell.h */,
+				E6805E721828759B0043B6DD /* RMSWordCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E6805E55182875420043B6DD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E87182875F20043B6DD /* Profile View Controller */,
+				E6805E88182876020043B6DD /* Settings View Controller */,
+				E6805E8A1828761C0043B6DD /* Height Picker View Controller */,
+				E6805E891828760D0043B6DD /* Word View Controller */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E6805E57182875420043B6DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E621828759B0043B6DD /* RMSHeightPickerView.storyboard */,
+				E63312C0182871A700FBFBCE /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E6805E59182875420043B6DD /* SDK Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E751828759B0043B6DD /* UIAlertView+RMS.h */,
+				E6805E761828759B0043B6DD /* UIAlertView+RMS.m */,
+			);
+			name = "SDK Categories";
+			sourceTree = "<group>";
+		};
+		E6805E87182875F20043B6DD /* Profile View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E5B1828759B0043B6DD /* ProfileViewController.h */,
+				E6805E5C1828759B0043B6DD /* ProfileViewController.m */,
+				E6805E5D1828759B0043B6DD /* ProfileViewController.plist */,
+			);
+			name = "Profile View Controller";
+			sourceTree = "<group>";
+		};
+		E6805E88182876020043B6DD /* Settings View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E6D1828759B0043B6DD /* RMSSettingsViewController.h */,
+				E6805E6F1828759B0043B6DD /* RMSSettingsViewController.m */,
+				E6805E6E1828759B0043B6DD /* RMSSettingsViewController.json */,
+				E6805E701828759B0043B6DD /* RMSSettingsViewController.plist */,
+			);
+			name = "Settings View Controller";
+			sourceTree = "<group>";
+		};
+		E6805E891828760D0043B6DD /* Word View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E731828759B0043B6DD /* RMSWordViewController.h */,
+				E6805E741828759B0043B6DD /* RMSWordViewController.m */,
+			);
+			name = "Word View Controller";
+			sourceTree = "<group>";
+		};
+		E6805E8A1828761C0043B6DD /* Height Picker View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E631828759B0043B6DD /* RMSHeightPickerViewController.h */,
+				E6805E641828759B0043B6DD /* RMSHeightPickerViewController.m */,
+			);
+			name = "Height Picker View Controller";
+			sourceTree = "<group>";
+		};
+		E6805E8C182876950043B6DD /* RMSTableViews */ = {
+			isa = PBXGroup;
+			children = (
+				E6805ECE182876B60043B6DD /* Resources */,
+				E6805E8D182876950043B6DD /* RMSArrayPickerCell.h */,
+				E6805E8E182876950043B6DD /* RMSArrayPickerCell.m */,
+				E6805E8F182876950043B6DD /* RMSArrayPickerController.h */,
+				E6805E90182876950043B6DD /* RMSArrayPickerController.m */,
+				E6805E91182876950043B6DD /* RMSButtonCell.h */,
+				E6805E92182876950043B6DD /* RMSButtonCell.m */,
+				E6805E93182876950043B6DD /* RMSButtonCell.xib */,
+				E6805E94182876950043B6DD /* RMSDataCell.h */,
+				E6805E95182876950043B6DD /* RMSDataCell.m */,
+				E6805E96182876950043B6DD /* RMSDatePickerCell.h */,
+				E6805E97182876950043B6DD /* RMSDatePickerCell.m */,
+				E6805E98182876950043B6DD /* RMSDatePickerView.storyboard */,
+				E6805E99182876950043B6DD /* RMSDatePickerViewController.h */,
+				E6805E9A182876950043B6DD /* RMSDatePickerViewController.m */,
+				E6805E9B182876950043B6DD /* RMSDynamicSection.h */,
+				E6805E9C182876950043B6DD /* RMSDynamicSection.m */,
+				E6805E9D182876950043B6DD /* RMSDynamicTableViewCell.h */,
+				E6805E9E182876950043B6DD /* RMSFormCell.h */,
+				E6805E9F182876950043B6DD /* RMSFormCell.m */,
+				E6805EA0182876950043B6DD /* RMSFormSection.h */,
+				E6805EA1182876950043B6DD /* RMSFormSection.m */,
+				E6805EA2182876950043B6DD /* RMSFormViewController.h */,
+				E6805EA3182876950043B6DD /* RMSFormViewController.m */,
+				E6805EA4182876950043B6DD /* RMSNavigationCell.h */,
+				E6805EA5182876950043B6DD /* RMSNavigationCell.m */,
+				E6805EA6182876950043B6DD /* RMSRightDetailFormCell.h */,
+				E6805EA7182876950043B6DD /* RMSRightDetailFormCell.m */,
+				E6805EA8182876950043B6DD /* RMSSwitchCell.h */,
+				E6805EA9182876950043B6DD /* RMSSwitchCell.m */,
+				E6805EAA182876950043B6DD /* RMSTableViewCell.h */,
+				E6805EAB182876950043B6DD /* RMSTableViewController.h */,
+				E6805EAC182876950043B6DD /* RMSTableViewController.m */,
+				E6805EAD182876950043B6DD /* RMSTableViewSection.h */,
+				E6805EAE182876950043B6DD /* RMSTableViewSection.m */,
+				E6805EAF182876950043B6DD /* RMSTargetActionCell.h */,
+				E6805EB0182876950043B6DD /* RMSTargetActionCell.m */,
+				E6805EB1182876950043B6DD /* RMSTextEntryCell.h */,
+				E6805EB2182876950043B6DD /* RMSTextEntryCell.m */,
+				E6805EB3182876950043B6DD /* RMSTextEntryCell.xib */,
+				E6805EB4182876950043B6DD /* RMSTextFieldObserver.h */,
+				E6805EB5182876950043B6DD /* RMSTextFieldObserver.m */,
+				E6805EB6182876950043B6DD /* RMSWebViewCell.h */,
+				E6805EB7182876950043B6DD /* RMSWebViewCell.m */,
+			);
+			name = RMSTableViews;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		E6805ECE182876B60043B6DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6805ECF182876B60043B6DD /* RMSButtonCell.xib */,
+				E6805ED0182876B60043B6DD /* RMSDatePickerView.storyboard */,
+			);
+			name = Resources;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E63312AA182871A700FBFBCE /* Table View Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E63312D7182871A700FBFBCE /* Build configuration list for PBXNativeTarget "Table View Demo" */;
+			buildPhases = (
+				E63312A7182871A700FBFBCE /* Sources */,
+				E63312A8182871A700FBFBCE /* Frameworks */,
+				E63312A9182871A700FBFBCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Table View Demo";
+			productName = "Table View Demo";
+			productReference = E63312AB182871A700FBFBCE /* Table View Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E63312C5182871A700FBFBCE /* Table View DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E63312DA182871A700FBFBCE /* Build configuration list for PBXNativeTarget "Table View DemoTests" */;
+			buildPhases = (
+				E63312C2182871A700FBFBCE /* Sources */,
+				E63312C3182871A700FBFBCE /* Frameworks */,
+				E63312C4182871A700FBFBCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E63312CC182871A700FBFBCE /* PBXTargetDependency */,
+			);
+			name = "Table View DemoTests";
+			productName = "Table View DemoTests";
+			productReference = E63312C6182871A700FBFBCE /* Table View DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E63312A3182871A700FBFBCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RMS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "RoleModel Software, Inc.";
+				TargetAttributes = {
+					E63312C5182871A700FBFBCE = {
+						TestTargetID = E63312AA182871A700FBFBCE;
+					};
+				};
+			};
+			buildConfigurationList = E63312A6182871A700FBFBCE /* Build configuration list for PBXProject "Table View Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E63312A2182871A700FBFBCE;
+			productRefGroup = E63312AC182871A700FBFBCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E63312AA182871A700FBFBCE /* Table View Demo */,
+				E63312C5182871A700FBFBCE /* Table View DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E63312A9182871A700FBFBCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6805E781828759B0043B6DD /* ProfileViewController.plist in Resources */,
+				E6805E7B1828759B0043B6DD /* RMSHeightPickerView.storyboard in Resources */,
+				E6805EBB182876950043B6DD /* RMSButtonCell.xib in Resources */,
+				E63312B9182871A700FBFBCE /* InfoPlist.strings in Resources */,
+				E6805EBE182876950043B6DD /* RMSDatePickerView.storyboard in Resources */,
+				E6805E811828759B0043B6DD /* RMSSettingsViewController.json in Resources */,
+				E63312C1182871A700FBFBCE /* Images.xcassets in Resources */,
+				E6805ECB182876950043B6DD /* RMSTextEntryCell.xib in Resources */,
+				E6805ED1182876B60043B6DD /* RMSButtonCell.xib in Resources */,
+				E6805ED2182876B60043B6DD /* RMSDatePickerView.storyboard in Resources */,
+				E6805E831828759B0043B6DD /* RMSSettingsViewController.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63312C4182871A700FBFBCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63312D2182871A700FBFBCE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E63312A7182871A700FBFBCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6805EBC182876950043B6DD /* RMSDataCell.m in Sources */,
+				E6805E7E1828759B0043B6DD /* RMSNamedColor.m in Sources */,
+				E63312BB182871A700FBFBCE /* main.m in Sources */,
+				E6805EC9182876950043B6DD /* RMSTargetActionCell.m in Sources */,
+				E6805E771828759B0043B6DD /* ProfileViewController.m in Sources */,
+				E6805EC8182876950043B6DD /* RMSTableViewSection.m in Sources */,
+				E6805ECA182876950043B6DD /* RMSTextEntryCell.m in Sources */,
+				E6805EC5182876950043B6DD /* RMSRightDetailFormCell.m in Sources */,
+				E6805E7D1828759B0043B6DD /* RMSModel.m in Sources */,
+				E6805EC0182876950043B6DD /* RMSDynamicSection.m in Sources */,
+				E6805ECD182876950043B6DD /* RMSWebViewCell.m in Sources */,
+				E6805EC6182876950043B6DD /* RMSSwitchCell.m in Sources */,
+				E6805EC7182876950043B6DD /* RMSTableViewController.m in Sources */,
+				E6805E7F1828759B0043B6DD /* RMSNamedColorPickerCell.m in Sources */,
+				E6805E7C1828759B0043B6DD /* RMSHeightPickerViewController.m in Sources */,
+				E6805E841828759B0043B6DD /* RMSWordCell.m in Sources */,
+				E6805EBA182876950043B6DD /* RMSButtonCell.m in Sources */,
+				E6805EBF182876950043B6DD /* RMSDatePickerViewController.m in Sources */,
+				E6805EC4182876950043B6DD /* RMSNavigationCell.m in Sources */,
+				E6805E801828759B0043B6DD /* RMSProfile.m in Sources */,
+				E6805EB9182876950043B6DD /* RMSArrayPickerController.m in Sources */,
+				E6805ECC182876950043B6DD /* RMSTextFieldObserver.m in Sources */,
+				E6805EBD182876950043B6DD /* RMSDatePickerCell.m in Sources */,
+				E6805E861828759B0043B6DD /* UIAlertView+RMS.m in Sources */,
+				E6805EC3182876950043B6DD /* RMSFormViewController.m in Sources */,
+				E6805EC2182876950043B6DD /* RMSFormSection.m in Sources */,
+				E6805E791828759B0043B6DD /* RMSHandicapPickerCell.m in Sources */,
+				E6805E7A1828759B0043B6DD /* RMSHeightPickerCell.m in Sources */,
+				E6805E851828759B0043B6DD /* RMSWordViewController.m in Sources */,
+				E6805EC1182876950043B6DD /* RMSFormCell.m in Sources */,
+				E6805EB8182876950043B6DD /* RMSArrayPickerCell.m in Sources */,
+				E63312BF182871A700FBFBCE /* RMSAppDelegate.m in Sources */,
+				E6805E821828759B0043B6DD /* RMSSettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63312C2182871A700FBFBCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63312D4182871A700FBFBCE /* Table_View_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E63312CC182871A700FBFBCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E63312AA182871A700FBFBCE /* Table View Demo */;
+			targetProxy = E63312CB182871A700FBFBCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E63312B7182871A700FBFBCE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E63312B8182871A700FBFBCE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E63312D0182871A700FBFBCE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E63312D1182871A700FBFBCE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E63312D5182871A700FBFBCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E63312D6182871A700FBFBCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E63312D8182871A700FBFBCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Table View Demo/Table View Demo-Prefix.pch";
+				INFOPLIST_FILE = "Table View Demo/Table View Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E63312D9182871A700FBFBCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Table View Demo/Table View Demo-Prefix.pch";
+				INFOPLIST_FILE = "Table View Demo/Table View Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E63312DB182871A700FBFBCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Table View Demo.app/Table View Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Table View Demo/Table View Demo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Table View DemoTests/Table View DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E63312DC182871A700FBFBCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Table View Demo.app/Table View Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Table View Demo/Table View Demo-Prefix.pch";
+				INFOPLIST_FILE = "Table View DemoTests/Table View DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E63312A6182871A700FBFBCE /* Build configuration list for PBXProject "Table View Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63312D5182871A700FBFBCE /* Debug */,
+				E63312D6182871A700FBFBCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E63312D7182871A700FBFBCE /* Build configuration list for PBXNativeTarget "Table View Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63312D8182871A700FBFBCE /* Debug */,
+				E63312D9182871A700FBFBCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E63312DA182871A700FBFBCE /* Build configuration list for PBXNativeTarget "Table View DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63312DB182871A700FBFBCE /* Debug */,
+				E63312DC182871A700FBFBCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E63312A3182871A700FBFBCE /* Project object */;
+}

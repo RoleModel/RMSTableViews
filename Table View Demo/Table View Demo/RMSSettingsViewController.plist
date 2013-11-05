@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>properties</key>
+		<dict>
+			<key>headerTitle</key>
+			<string>Basic Settings</string>
+		</dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>className</key>
+				<string>RMSSwitchCell</string>
+				<key>properties</key>
+				<dict>
+					<key>representedObject</key>
+					<string>:self</string>
+					<key>keyPath</key>
+					<string>awesome</string>
+					<key>labelText</key>
+					<string>Awesome?</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>className</key>
+				<string>RMSArrayPickerCell</string>
+				<key>properties</key>
+				<dict>
+					<key>representedObject</key>
+					<string>:self</string>
+					<key>keyPath</key>
+					<string>passwordExpirationDays</string>
+					<key>labelText</key>
+					<string>Days until password expires</string>
+					<key>choices</key>
+					<array>
+						<integer>0</integer>
+						<integer>30</integer>
+						<integer>60</integer>
+					</array>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>properties</key>
+		<dict>
+			<key>headerTitle</key>
+			<string>Stuff</string>
+		</dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>className</key>
+				<string>RMSNamedColorPickerCell</string>
+				<key>properties</key>
+				<dict>
+					<key>representedObject</key>
+					<string>:self</string>
+					<key>keyPath</key>
+					<string>favoriteColor</string>
+					<key>labelText</key>
+					<string>Color</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>properties</key>
+		<dict>
+			<key>headerTitle</key>
+			<string>Miscellaneous</string>
+		</dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>className</key>
+				<string>RMSWebViewCell</string>
+				<key>properties</key>
+				<dict>
+					<key>labelText</key>
+					<string>In Cupertino...</string>
+					<key>URLString</key>
+					<string>http://www.apple.com</string>
+					<key>title</key>
+					<string>One Infinite Loop</string>
+				</dict>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

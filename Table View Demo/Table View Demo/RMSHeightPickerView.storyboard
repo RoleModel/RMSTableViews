@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Fvk-rQ-8Dr">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--Height Picker View Controller-->
+        <scene sceneID="NjB-zb-Mvy">
+            <objects>
+                <viewController id="Fvk-rQ-8Dr" customClass="RMSHeightPickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tfA-QC-NoI"/>
+                        <viewControllerLayoutGuide type="bottom" id="cTH-CV-5ag"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dam-oF-rnw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zN-cy-WYx">
+                                <rect key="frame" x="0.0" y="64" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Fvk-rQ-8Dr" id="Zcz-mO-clG"/>
+                                    <outlet property="delegate" destination="Fvk-rQ-8Dr" id="eyh-4i-AjU"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0zN-cy-WYx" firstAttribute="top" secondItem="tfA-QC-NoI" secondAttribute="bottom" id="4Gx-7b-fbF"/>
+                            <constraint firstItem="0zN-cy-WYx" firstAttribute="centerY" secondItem="Dam-oF-rnw" secondAttribute="centerY" constant="-112" id="6tX-jQ-okg"/>
+                            <constraint firstItem="0zN-cy-WYx" firstAttribute="leading" secondItem="Dam-oF-rnw" secondAttribute="leading" id="EcA-Nh-MTM"/>
+                            <constraint firstAttribute="trailing" secondItem="0zN-cy-WYx" secondAttribute="trailing" id="fXV-Rr-iWK"/>
+                        </constraints>
+                        <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="picker" destination="0zN-cy-WYx" id="GLj-7B-dg7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pH-yT-k90" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323" y="81"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

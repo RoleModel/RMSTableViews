@@ -1,0 +1,60 @@
+ [
+  {
+  "properties": {
+  "headerTitle": "Basic Settings"
+  },
+  "rows": [
+           {
+           "className": "RMSSwitchCell",
+           "properties": {
+           "keyPath": "awesome",
+           "labelText": "Awesome?",
+           "representedObject": ":self"
+           }
+           },
+           {
+           "className": "RMSArrayPickerCell",
+           "properties": {
+           "choices": [
+                       0,
+                       30,
+                       60
+                       ],
+           "keyPath": "passwordExpirationDays",
+           "labelText": "Days until password expires",
+           "representedObject": ":self"
+           }
+           }
+           ]
+  },
+  {
+  "properties": {
+  "headerTitle": "Stuff"
+  },
+  "rows": [
+           {
+           "className": "RMSNamedColorPickerCell",
+           "properties": {
+           "keyPath": "favoriteColor",
+           "labelText": "Color",
+           "representedObject": ":self"
+           }
+           }
+           ]
+  },
+  {
+  "properties": {
+  "headerTitle": "Miscellaneous"
+  },
+  "rows": [
+           {
+           "className": "RMSWebViewCell",
+           "properties": {
+           "URLString": "http://www.apple.com",
+           "labelText": "In Cupertino...",
+           "title": "One Infinite Loop"
+           }
+           }
+           ]
+  }
+  ]
