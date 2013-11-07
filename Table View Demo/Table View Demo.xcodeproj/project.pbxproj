@@ -39,10 +39,8 @@
 		E6805EB8182876950043B6DD /* RMSArrayPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E8E182876950043B6DD /* RMSArrayPickerCell.m */; };
 		E6805EB9182876950043B6DD /* RMSArrayPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E90182876950043B6DD /* RMSArrayPickerController.m */; };
 		E6805EBA182876950043B6DD /* RMSButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E92182876950043B6DD /* RMSButtonCell.m */; };
-		E6805EBB182876950043B6DD /* RMSButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6805E93182876950043B6DD /* RMSButtonCell.xib */; };
 		E6805EBC182876950043B6DD /* RMSDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E95182876950043B6DD /* RMSDataCell.m */; };
 		E6805EBD182876950043B6DD /* RMSDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E97182876950043B6DD /* RMSDatePickerCell.m */; };
-		E6805EBE182876950043B6DD /* RMSDatePickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6805E98182876950043B6DD /* RMSDatePickerView.storyboard */; };
 		E6805EBF182876950043B6DD /* RMSDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E9A182876950043B6DD /* RMSDatePickerViewController.m */; };
 		E6805EC0182876950043B6DD /* RMSDynamicSection.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E9C182876950043B6DD /* RMSDynamicSection.m */; };
 		E6805EC1182876950043B6DD /* RMSFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E9F182876950043B6DD /* RMSFormCell.m */; };
@@ -55,7 +53,6 @@
 		E6805EC8182876950043B6DD /* RMSTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EAE182876950043B6DD /* RMSTableViewSection.m */; };
 		E6805EC9182876950043B6DD /* RMSTargetActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EB0182876950043B6DD /* RMSTargetActionCell.m */; };
 		E6805ECA182876950043B6DD /* RMSTextEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EB2182876950043B6DD /* RMSTextEntryCell.m */; };
-		E6805ECB182876950043B6DD /* RMSTextEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6805EB3182876950043B6DD /* RMSTextEntryCell.xib */; };
 		E6805ECC182876950043B6DD /* RMSTextFieldObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EB5182876950043B6DD /* RMSTextFieldObserver.m */; };
 		E6805ECD182876950043B6DD /* RMSWebViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805EB7182876950043B6DD /* RMSWebViewCell.m */; };
 		E6805ED1182876B60043B6DD /* RMSButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6805ECF182876B60043B6DD /* RMSButtonCell.xib */; };
@@ -125,12 +122,10 @@
 		E6805E90182876950043B6DD /* RMSArrayPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSArrayPickerController.m; sourceTree = "<group>"; };
 		E6805E91182876950043B6DD /* RMSButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSButtonCell.h; sourceTree = "<group>"; };
 		E6805E92182876950043B6DD /* RMSButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSButtonCell.m; sourceTree = "<group>"; };
-		E6805E93182876950043B6DD /* RMSButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSButtonCell.xib; sourceTree = "<group>"; };
 		E6805E94182876950043B6DD /* RMSDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSDataCell.h; sourceTree = "<group>"; };
 		E6805E95182876950043B6DD /* RMSDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDataCell.m; sourceTree = "<group>"; };
 		E6805E96182876950043B6DD /* RMSDatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSDatePickerCell.h; sourceTree = "<group>"; };
 		E6805E97182876950043B6DD /* RMSDatePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDatePickerCell.m; sourceTree = "<group>"; };
-		E6805E98182876950043B6DD /* RMSDatePickerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RMSDatePickerView.storyboard; sourceTree = "<group>"; };
 		E6805E99182876950043B6DD /* RMSDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSDatePickerViewController.h; sourceTree = "<group>"; };
 		E6805E9A182876950043B6DD /* RMSDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDatePickerViewController.m; sourceTree = "<group>"; };
 		E6805E9B182876950043B6DD /* RMSDynamicSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSDynamicSection.h; sourceTree = "<group>"; };
@@ -157,7 +152,6 @@
 		E6805EB0182876950043B6DD /* RMSTargetActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSTargetActionCell.m; sourceTree = "<group>"; };
 		E6805EB1182876950043B6DD /* RMSTextEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSTextEntryCell.h; sourceTree = "<group>"; };
 		E6805EB2182876950043B6DD /* RMSTextEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSTextEntryCell.m; sourceTree = "<group>"; };
-		E6805EB3182876950043B6DD /* RMSTextEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSTextEntryCell.xib; sourceTree = "<group>"; };
 		E6805EB4182876950043B6DD /* RMSTextFieldObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSTextFieldObserver.h; sourceTree = "<group>"; };
 		E6805EB5182876950043B6DD /* RMSTextFieldObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSTextFieldObserver.m; sourceTree = "<group>"; };
 		E6805EB6182876950043B6DD /* RMSWebViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSWebViewCell.h; sourceTree = "<group>"; };
@@ -369,50 +363,14 @@
 		E6805E8C182876950043B6DD /* RMSTableViews */ = {
 			isa = PBXGroup;
 			children = (
-				E6805ECE182876B60043B6DD /* Resources */,
-				E6805E8D182876950043B6DD /* RMSArrayPickerCell.h */,
-				E6805E8E182876950043B6DD /* RMSArrayPickerCell.m */,
-				E6805E8F182876950043B6DD /* RMSArrayPickerController.h */,
-				E6805E90182876950043B6DD /* RMSArrayPickerController.m */,
-				E6805E91182876950043B6DD /* RMSButtonCell.h */,
-				E6805E92182876950043B6DD /* RMSButtonCell.m */,
-				E6805E93182876950043B6DD /* RMSButtonCell.xib */,
-				E6805E94182876950043B6DD /* RMSDataCell.h */,
-				E6805E95182876950043B6DD /* RMSDataCell.m */,
-				E6805E96182876950043B6DD /* RMSDatePickerCell.h */,
-				E6805E97182876950043B6DD /* RMSDatePickerCell.m */,
-				E6805E98182876950043B6DD /* RMSDatePickerView.storyboard */,
-				E6805E99182876950043B6DD /* RMSDatePickerViewController.h */,
-				E6805E9A182876950043B6DD /* RMSDatePickerViewController.m */,
-				E6805E9B182876950043B6DD /* RMSDynamicSection.h */,
-				E6805E9C182876950043B6DD /* RMSDynamicSection.m */,
-				E6805E9D182876950043B6DD /* RMSDynamicTableViewCell.h */,
-				E6805E9E182876950043B6DD /* RMSFormCell.h */,
-				E6805E9F182876950043B6DD /* RMSFormCell.m */,
-				E6805EA0182876950043B6DD /* RMSFormSection.h */,
-				E6805EA1182876950043B6DD /* RMSFormSection.m */,
-				E6805EA2182876950043B6DD /* RMSFormViewController.h */,
-				E6805EA3182876950043B6DD /* RMSFormViewController.m */,
-				E6805EA4182876950043B6DD /* RMSNavigationCell.h */,
-				E6805EA5182876950043B6DD /* RMSNavigationCell.m */,
-				E6805EA6182876950043B6DD /* RMSRightDetailFormCell.h */,
-				E6805EA7182876950043B6DD /* RMSRightDetailFormCell.m */,
-				E6805EA8182876950043B6DD /* RMSSwitchCell.h */,
-				E6805EA9182876950043B6DD /* RMSSwitchCell.m */,
-				E6805EAA182876950043B6DD /* RMSTableViewCell.h */,
 				E6805EAB182876950043B6DD /* RMSTableViewController.h */,
 				E6805EAC182876950043B6DD /* RMSTableViewController.m */,
 				E6805EAD182876950043B6DD /* RMSTableViewSection.h */,
 				E6805EAE182876950043B6DD /* RMSTableViewSection.m */,
-				E6805EAF182876950043B6DD /* RMSTargetActionCell.h */,
-				E6805EB0182876950043B6DD /* RMSTargetActionCell.m */,
-				E6805EB1182876950043B6DD /* RMSTextEntryCell.h */,
-				E6805EB2182876950043B6DD /* RMSTextEntryCell.m */,
-				E6805EB3182876950043B6DD /* RMSTextEntryCell.xib */,
-				E6805EB4182876950043B6DD /* RMSTextFieldObserver.h */,
-				E6805EB5182876950043B6DD /* RMSTextFieldObserver.m */,
-				E6805EB6182876950043B6DD /* RMSWebViewCell.h */,
-				E6805EB7182876950043B6DD /* RMSWebViewCell.m */,
+				E6805EAA182876950043B6DD /* RMSTableViewCell.h */,
+				E6BF3039182B344800D6F009 /* Dynamic Tables */,
+				E6BF3037182B334800D6F009 /* Form Tables */,
+				E6805ECE182876B60043B6DD /* Resources */,
 			);
 			name = RMSTableViews;
 			path = ../../Source;
@@ -427,6 +385,143 @@
 			);
 			name = Resources;
 			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		E6BF3037182B334800D6F009 /* Form Tables */ = {
+			isa = PBXGroup;
+			children = (
+				E6805EA0182876950043B6DD /* RMSFormSection.h */,
+				E6805EA1182876950043B6DD /* RMSFormSection.m */,
+				E6805EA2182876950043B6DD /* RMSFormViewController.h */,
+				E6805EA3182876950043B6DD /* RMSFormViewController.m */,
+				E6BF3038182B335900D6F009 /* Cells */,
+			);
+			name = "Form Tables";
+			sourceTree = "<group>";
+		};
+		E6BF3038182B335900D6F009 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E9E182876950043B6DD /* RMSFormCell.h */,
+				E6805E9F182876950043B6DD /* RMSFormCell.m */,
+				E6BF3043182B359000D6F009 /* Web View */,
+				E6BF3040182B351100D6F009 /* Target Action */,
+				E6BF303E182B34C700D6F009 /* Data */,
+				E6BF303C182B34A100D6F009 /* Button */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E6BF3039182B344800D6F009 /* Dynamic Tables */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E9B182876950043B6DD /* RMSDynamicSection.h */,
+				E6805E9C182876950043B6DD /* RMSDynamicSection.m */,
+				E6805E9D182876950043B6DD /* RMSDynamicTableViewCell.h */,
+			);
+			name = "Dynamic Tables";
+			sourceTree = "<group>";
+		};
+		E6BF303A182B347800D6F009 /* Array Picker */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E8D182876950043B6DD /* RMSArrayPickerCell.h */,
+				E6805E8E182876950043B6DD /* RMSArrayPickerCell.m */,
+				E6805E8F182876950043B6DD /* RMSArrayPickerController.h */,
+				E6805E90182876950043B6DD /* RMSArrayPickerController.m */,
+			);
+			name = "Array Picker";
+			sourceTree = "<group>";
+		};
+		E6BF303B182B348C00D6F009 /* Date Picker */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E96182876950043B6DD /* RMSDatePickerCell.h */,
+				E6805E97182876950043B6DD /* RMSDatePickerCell.m */,
+				E6805E99182876950043B6DD /* RMSDatePickerViewController.h */,
+				E6805E9A182876950043B6DD /* RMSDatePickerViewController.m */,
+			);
+			name = "Date Picker";
+			sourceTree = "<group>";
+		};
+		E6BF303C182B34A100D6F009 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				E6805E91182876950043B6DD /* RMSButtonCell.h */,
+				E6805E92182876950043B6DD /* RMSButtonCell.m */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		E6BF303D182B34AF00D6F009 /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				E6805EA8182876950043B6DD /* RMSSwitchCell.h */,
+				E6805EA9182876950043B6DD /* RMSSwitchCell.m */,
+			);
+			name = Switch;
+			sourceTree = "<group>";
+		};
+		E6BF303E182B34C700D6F009 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E6BF3042182B357100D6F009 /* Text Entry */,
+				E6BF303D182B34AF00D6F009 /* Switch */,
+				E6805E94182876950043B6DD /* RMSDataCell.h */,
+				E6805E95182876950043B6DD /* RMSDataCell.m */,
+				E6BF303F182B34E200D6F009 /* Right Detail */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		E6BF303F182B34E200D6F009 /* Right Detail */ = {
+			isa = PBXGroup;
+			children = (
+				E6805EA6182876950043B6DD /* RMSRightDetailFormCell.h */,
+				E6805EA7182876950043B6DD /* RMSRightDetailFormCell.m */,
+				E6BF303B182B348C00D6F009 /* Date Picker */,
+				E6BF303A182B347800D6F009 /* Array Picker */,
+			);
+			name = "Right Detail";
+			sourceTree = "<group>";
+		};
+		E6BF3040182B351100D6F009 /* Target Action */ = {
+			isa = PBXGroup;
+			children = (
+				E6805EAF182876950043B6DD /* RMSTargetActionCell.h */,
+				E6805EB0182876950043B6DD /* RMSTargetActionCell.m */,
+				E6BF3041182B352800D6F009 /* Navigation */,
+			);
+			name = "Target Action";
+			sourceTree = "<group>";
+		};
+		E6BF3041182B352800D6F009 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				E6805EA4182876950043B6DD /* RMSNavigationCell.h */,
+				E6805EA5182876950043B6DD /* RMSNavigationCell.m */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		E6BF3042182B357100D6F009 /* Text Entry */ = {
+			isa = PBXGroup;
+			children = (
+				E6805EB1182876950043B6DD /* RMSTextEntryCell.h */,
+				E6805EB2182876950043B6DD /* RMSTextEntryCell.m */,
+				E6805EB4182876950043B6DD /* RMSTextFieldObserver.h */,
+				E6805EB5182876950043B6DD /* RMSTextFieldObserver.m */,
+			);
+			name = "Text Entry";
+			sourceTree = "<group>";
+		};
+		E6BF3043182B359000D6F009 /* Web View */ = {
+			isa = PBXGroup;
+			children = (
+				E6805EB6182876950043B6DD /* RMSWebViewCell.h */,
+				E6805EB7182876950043B6DD /* RMSWebViewCell.m */,
+			);
+			name = "Web View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,12 +604,9 @@
 			files = (
 				E6805E781828759B0043B6DD /* ProfileViewController.plist in Resources */,
 				E6805E7B1828759B0043B6DD /* RMSHeightPickerView.storyboard in Resources */,
-				E6805EBB182876950043B6DD /* RMSButtonCell.xib in Resources */,
 				E63312B9182871A700FBFBCE /* InfoPlist.strings in Resources */,
-				E6805EBE182876950043B6DD /* RMSDatePickerView.storyboard in Resources */,
 				E6805E811828759B0043B6DD /* RMSSettingsViewController.json in Resources */,
 				E63312C1182871A700FBFBCE /* Images.xcassets in Resources */,
-				E6805ECB182876950043B6DD /* RMSTextEntryCell.xib in Resources */,
 				E6805ED1182876B60043B6DD /* RMSButtonCell.xib in Resources */,
 				E6805ED2182876B60043B6DD /* RMSDatePickerView.storyboard in Resources */,
 				E6805ED418289AFE0043B6DD /* RMSTextEntryCell.xib in Resources */,
