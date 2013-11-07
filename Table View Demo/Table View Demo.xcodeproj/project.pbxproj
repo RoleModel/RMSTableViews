@@ -58,6 +58,7 @@
 		E6805ED1182876B60043B6DD /* RMSButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6805ECF182876B60043B6DD /* RMSButtonCell.xib */; };
 		E6805ED2182876B60043B6DD /* RMSDatePickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6805ED0182876B60043B6DD /* RMSDatePickerView.storyboard */; };
 		E6805ED418289AFE0043B6DD /* RMSTextEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6805ED318289AFE0043B6DD /* RMSTextEntryCell.xib */; };
+		E6BF3045182B3AF500D6F009 /* RMSDynamicSectionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BF3044182B3AF500D6F009 /* RMSDynamicSectionSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,7 @@
 		E6805ECF182876B60043B6DD /* RMSButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSButtonCell.xib; sourceTree = "<group>"; };
 		E6805ED0182876B60043B6DD /* RMSDatePickerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RMSDatePickerView.storyboard; sourceTree = "<group>"; };
 		E6805ED318289AFE0043B6DD /* RMSTextEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSTextEntryCell.xib; sourceTree = "<group>"; };
+		E6BF3044182B3AF500D6F009 /* RMSDynamicSectionSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDynamicSectionSpec.m; sourceTree = "<group>"; };
 		ECC5100448564698ADE4001D /* Pods-RMSTableViewTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMSTableViewTests.xcconfig"; path = "Pods/Pods-RMSTableViewTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -222,7 +224,6 @@
 		E63312B4182871A700FBFBCE /* Table View Demo */ = {
 			isa = PBXGroup;
 			children = (
-				E6805E8C182876950043B6DD /* RMSTableViews */,
 				E63312BD182871A700FBFBCE /* RMSAppDelegate.h */,
 				E63312BE182871A700FBFBCE /* RMSAppDelegate.m */,
 				E6805E52182875410043B6DD /* Model */,
@@ -231,6 +232,7 @@
 				E6805E57182875420043B6DD /* Resources */,
 				E6805E59182875420043B6DD /* SDK Categories */,
 				E63312B5182871A700FBFBCE /* Supporting Files */,
+				E6805E8C182876950043B6DD /* RMSTableViews */,
 			);
 			path = "Table View Demo";
 			sourceTree = "<group>";
@@ -250,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				E63312D3182871A700FBFBCE /* RMSTableViewControllerSpec.m */,
+				E6BF3044182B3AF500D6F009 /* RMSDynamicSectionSpec.m */,
 				E63312CE182871A700FBFBCE /* Supporting Files */,
 			);
 			path = RMSTableViewTests;
@@ -269,10 +272,10 @@
 			children = (
 				E6805E651828759B0043B6DD /* RMSModel.h */,
 				E6805E661828759B0043B6DD /* RMSModel.m */,
-				E6805E671828759B0043B6DD /* RMSNamedColor.h */,
-				E6805E681828759B0043B6DD /* RMSNamedColor.m */,
 				E6805E6B1828759B0043B6DD /* RMSProfile.h */,
 				E6805E6C1828759B0043B6DD /* RMSProfile.m */,
+				E6805E671828759B0043B6DD /* RMSNamedColor.h */,
+				E6805E681828759B0043B6DD /* RMSNamedColor.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -465,10 +468,10 @@
 		E6BF303E182B34C700D6F009 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				E6BF3042182B357100D6F009 /* Text Entry */,
-				E6BF303D182B34AF00D6F009 /* Switch */,
 				E6805E94182876950043B6DD /* RMSDataCell.h */,
 				E6805E95182876950043B6DD /* RMSDataCell.m */,
+				E6BF3042182B357100D6F009 /* Text Entry */,
+				E6BF303D182B34AF00D6F009 /* Switch */,
 				E6BF303F182B34E200D6F009 /* Right Detail */,
 			);
 			name = Data;
@@ -703,6 +706,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E63312D4182871A700FBFBCE /* RMSTableViewControllerSpec.m in Sources */,
+				E6BF3045182B3AF500D6F009 /* RMSDynamicSectionSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

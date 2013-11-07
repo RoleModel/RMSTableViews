@@ -16,17 +16,8 @@ describe(@"RMSTableViewController", ^{
     context(@"when instantiated", ^{
         __block RMSTableViewController *tableViewController = nil;
 
-        beforeAll(^{ // Occurs once
-        });
-
-        afterAll(^{ // Occurs once
-        });
-
-        beforeEach(^{ // Occurs before each enclosed "it"
+        beforeEach(^{
             tableViewController = [[RMSTableViewController alloc] init];
-        });
-
-        afterEach(^{ // Occurs after each enclosed "it"
         });
 
         it(@"should have non-nil sections", ^{
