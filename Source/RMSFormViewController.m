@@ -63,10 +63,8 @@ NSString * const RMSFormKeyEnabled = @"enabled";
     return [self initWithStyle:style descriptor:descriptor];
 }
 
-
-
 - (NSDictionary *)objectSubstitionDictionary {
-    return nil;
+    return @{};
 }
 
 - (void)viewDidLoad {
