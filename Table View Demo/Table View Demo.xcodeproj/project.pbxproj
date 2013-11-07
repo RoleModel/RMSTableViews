@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56C07F36F912411A939040C1 /* libPods-RMSTableViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E61ED930052F4F65BBA9807D /* libPods-RMSTableViewTests.a */; };
 		E63312AF182871A700FBFBCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63312AE182871A700FBFBCE /* Foundation.framework */; };
 		E63312B1182871A700FBFBCE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63312B0182871A700FBFBCE /* CoreGraphics.framework */; };
 		E63312B3182871A700FBFBCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63312B2182871A700FBFBCE /* UIKit.framework */; };
@@ -18,7 +19,7 @@
 		E63312C9182871A700FBFBCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63312AE182871A700FBFBCE /* Foundation.framework */; };
 		E63312CA182871A700FBFBCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63312B2182871A700FBFBCE /* UIKit.framework */; };
 		E63312D2182871A700FBFBCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E63312D0182871A700FBFBCE /* InfoPlist.strings */; };
-		E63312D4182871A700FBFBCE /* Table_View_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E63312D3182871A700FBFBCE /* Table_View_DemoTests.m */; };
+		E63312D4182871A700FBFBCE /* RMSTableViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E63312D3182871A700FBFBCE /* RMSTableViewControllerSpec.m */; };
 		E6805E771828759B0043B6DD /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E5C1828759B0043B6DD /* ProfileViewController.m */; };
 		E6805E781828759B0043B6DD /* ProfileViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6805E5D1828759B0043B6DD /* ProfileViewController.plist */; };
 		E6805E791828759B0043B6DD /* RMSHandicapPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E5F1828759B0043B6DD /* RMSHandicapPickerCell.m */; };
@@ -73,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E61ED930052F4F65BBA9807D /* libPods-RMSTableViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RMSTableViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63312AB182871A700FBFBCE /* Table View Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table View Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63312AE182871A700FBFBCE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E63312B0182871A700FBFBCE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,11 +86,11 @@
 		E63312BD182871A700FBFBCE /* RMSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMSAppDelegate.h; sourceTree = "<group>"; };
 		E63312BE182871A700FBFBCE /* RMSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMSAppDelegate.m; sourceTree = "<group>"; };
 		E63312C0182871A700FBFBCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E63312C6182871A700FBFBCE /* Table View DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Table View DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63312C6182871A700FBFBCE /* RMSTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMSTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63312C7182871A700FBFBCE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E63312CF182871A700FBFBCE /* Table View DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Table View DemoTests-Info.plist"; sourceTree = "<group>"; };
+		E63312CF182871A700FBFBCE /* RMSTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RMSTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		E63312D1182871A700FBFBCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E63312D3182871A700FBFBCE /* Table_View_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Table_View_DemoTests.m; sourceTree = "<group>"; };
+		E63312D3182871A700FBFBCE /* RMSTableViewControllerSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMSTableViewControllerSpec.m; sourceTree = "<group>"; };
 		E6805E5B1828759B0043B6DD /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		E6805E5C1828759B0043B6DD /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		E6805E5D1828759B0043B6DD /* ProfileViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProfileViewController.plist; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		E6805ECF182876B60043B6DD /* RMSButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSButtonCell.xib; sourceTree = "<group>"; };
 		E6805ED0182876B60043B6DD /* RMSDatePickerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RMSDatePickerView.storyboard; sourceTree = "<group>"; };
 		E6805ED318289AFE0043B6DD /* RMSTextEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSTextEntryCell.xib; sourceTree = "<group>"; };
+		ECC5100448564698ADE4001D /* Pods-RMSTableViewTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMSTableViewTests.xcconfig"; path = "Pods/Pods-RMSTableViewTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +186,7 @@
 				E63312C8182871A700FBFBCE /* XCTest.framework in Frameworks */,
 				E63312CA182871A700FBFBCE /* UIKit.framework in Frameworks */,
 				E63312C9182871A700FBFBCE /* Foundation.framework in Frameworks */,
+				56C07F36F912411A939040C1 /* libPods-RMSTableViewTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,9 +197,10 @@
 			isa = PBXGroup;
 			children = (
 				E63312B4182871A700FBFBCE /* Table View Demo */,
-				E63312CD182871A700FBFBCE /* Table View DemoTests */,
+				E63312CD182871A700FBFBCE /* RMSTableViewTests */,
 				E63312AD182871A700FBFBCE /* Frameworks */,
 				E63312AC182871A700FBFBCE /* Products */,
+				ECC5100448564698ADE4001D /* Pods-RMSTableViewTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				E63312AB182871A700FBFBCE /* Table View Demo.app */,
-				E63312C6182871A700FBFBCE /* Table View DemoTests.xctest */,
+				E63312C6182871A700FBFBCE /* RMSTableViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 				E63312B0182871A700FBFBCE /* CoreGraphics.framework */,
 				E63312B2182871A700FBFBCE /* UIKit.framework */,
 				E63312C7182871A700FBFBCE /* XCTest.framework */,
+				E61ED930052F4F65BBA9807D /* libPods-RMSTableViewTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -246,19 +252,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E63312CD182871A700FBFBCE /* Table View DemoTests */ = {
+		E63312CD182871A700FBFBCE /* RMSTableViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				E63312D3182871A700FBFBCE /* Table_View_DemoTests.m */,
+				E63312D3182871A700FBFBCE /* RMSTableViewControllerSpec.m */,
 				E63312CE182871A700FBFBCE /* Supporting Files */,
 			);
-			path = "Table View DemoTests";
+			path = RMSTableViewTests;
 			sourceTree = "<group>";
 		};
 		E63312CE182871A700FBFBCE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E63312CF182871A700FBFBCE /* Table View DemoTests-Info.plist */,
+				E63312CF182871A700FBFBCE /* RMSTableViewTests-Info.plist */,
 				E63312D0182871A700FBFBCE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -443,22 +449,24 @@
 			productReference = E63312AB182871A700FBFBCE /* Table View Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E63312C5182871A700FBFBCE /* Table View DemoTests */ = {
+		E63312C5182871A700FBFBCE /* RMSTableViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E63312DA182871A700FBFBCE /* Build configuration list for PBXNativeTarget "Table View DemoTests" */;
+			buildConfigurationList = E63312DA182871A700FBFBCE /* Build configuration list for PBXNativeTarget "RMSTableViewTests" */;
 			buildPhases = (
+				8630CCC09C344DE8BBFEAEC7 /* Check Pods Manifest.lock */,
 				E63312C2182871A700FBFBCE /* Sources */,
 				E63312C3182871A700FBFBCE /* Frameworks */,
 				E63312C4182871A700FBFBCE /* Resources */,
+				00EB62B4A6E24C839056FF02 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				E63312CC182871A700FBFBCE /* PBXTargetDependency */,
 			);
-			name = "Table View DemoTests";
+			name = RMSTableViewTests;
 			productName = "Table View DemoTests";
-			productReference = E63312C6182871A700FBFBCE /* Table View DemoTests.xctest */;
+			productReference = E63312C6182871A700FBFBCE /* RMSTableViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -489,7 +497,7 @@
 			projectRoot = "";
 			targets = (
 				E63312AA182871A700FBFBCE /* Table View Demo */,
-				E63312C5182871A700FBFBCE /* Table View DemoTests */,
+				E63312C5182871A700FBFBCE /* RMSTableViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -523,6 +531,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00EB62B4A6E24C839056FF02 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-RMSTableViewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8630CCC09C344DE8BBFEAEC7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E63312A7182871A700FBFBCE /* Sources */ = {
@@ -569,7 +610,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E63312D4182871A700FBFBCE /* Table_View_DemoTests.m in Sources */,
+				E63312D4182871A700FBFBCE /* RMSTableViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,6 +746,7 @@
 		};
 		E63312DB182871A700FBFBCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECC5100448564698ADE4001D /* Pods-RMSTableViewTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Table View Demo.app/Table View Demo";
@@ -719,7 +761,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Table View DemoTests/Table View DemoTests-Info.plist";
+				INFOPLIST_FILE = "RMSTableViewTests/RMSTableViewTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -728,6 +771,7 @@
 		};
 		E63312DC182871A700FBFBCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECC5100448564698ADE4001D /* Pods-RMSTableViewTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Table View Demo.app/Table View Demo";
@@ -738,7 +782,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Table View Demo/Table View Demo-Prefix.pch";
-				INFOPLIST_FILE = "Table View DemoTests/Table View DemoTests-Info.plist";
+				INFOPLIST_FILE = "RMSTableViewTests/RMSTableViewTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -766,7 +811,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E63312DA182871A700FBFBCE /* Build configuration list for PBXNativeTarget "Table View DemoTests" */ = {
+		E63312DA182871A700FBFBCE /* Build configuration list for PBXNativeTarget "RMSTableViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E63312DB182871A700FBFBCE /* Debug */,

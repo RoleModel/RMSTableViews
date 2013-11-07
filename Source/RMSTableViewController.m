@@ -19,7 +19,7 @@
 @implementation RMSTableViewController
 
 - (NSArray *)generateSections {
-    return [NSArray array];
+    return @[];
 }
 
 - (void)sectionGenerationDidComplete {
