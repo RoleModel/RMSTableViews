@@ -59,6 +59,7 @@
 		E6805ED2182876B60043B6DD /* RMSDatePickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6805ED0182876B60043B6DD /* RMSDatePickerView.storyboard */; };
 		E6805ED418289AFE0043B6DD /* RMSTextEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6805ED318289AFE0043B6DD /* RMSTextEntryCell.xib */; };
 		E6BF3045182B3AF500D6F009 /* RMSDynamicSectionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BF3044182B3AF500D6F009 /* RMSDynamicSectionSpec.m */; };
+		E6BF3047182B3EC600D6F009 /* RMSFormViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BF3046182B3EC600D6F009 /* RMSFormViewControllerSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +162,7 @@
 		E6805ED0182876B60043B6DD /* RMSDatePickerView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RMSDatePickerView.storyboard; sourceTree = "<group>"; };
 		E6805ED318289AFE0043B6DD /* RMSTextEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSTextEntryCell.xib; sourceTree = "<group>"; };
 		E6BF3044182B3AF500D6F009 /* RMSDynamicSectionSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDynamicSectionSpec.m; sourceTree = "<group>"; };
+		E6BF3046182B3EC600D6F009 /* RMSFormViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSFormViewControllerSpec.m; sourceTree = "<group>"; };
 		ECC5100448564698ADE4001D /* Pods-RMSTableViewTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMSTableViewTests.xcconfig"; path = "Pods/Pods-RMSTableViewTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,6 +255,7 @@
 			children = (
 				E63312D3182871A700FBFBCE /* RMSTableViewControllerSpec.m */,
 				E6BF3044182B3AF500D6F009 /* RMSDynamicSectionSpec.m */,
+				E6BF3046182B3EC600D6F009 /* RMSFormViewControllerSpec.m */,
 				E63312CE182871A700FBFBCE /* Supporting Files */,
 			);
 			path = RMSTableViewTests;
@@ -410,7 +413,6 @@
 				E6BF3043182B359000D6F009 /* Web View */,
 				E6BF3040182B351100D6F009 /* Target Action */,
 				E6BF303E182B34C700D6F009 /* Data */,
-				E6BF303C182B34A100D6F009 /* Button */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -493,6 +495,7 @@
 			children = (
 				E6805EAF182876950043B6DD /* RMSTargetActionCell.h */,
 				E6805EB0182876950043B6DD /* RMSTargetActionCell.m */,
+				E6BF303C182B34A100D6F009 /* Button */,
 				E6BF3041182B352800D6F009 /* Navigation */,
 			);
 			name = "Target Action";
@@ -706,6 +709,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E63312D4182871A700FBFBCE /* RMSTableViewControllerSpec.m in Sources */,
+				E6BF3047182B3EC600D6F009 /* RMSFormViewControllerSpec.m in Sources */,
 				E6BF3045182B3AF500D6F009 /* RMSDynamicSectionSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
