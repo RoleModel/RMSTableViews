@@ -60,6 +60,8 @@
 		E6805ED418289AFE0043B6DD /* RMSTextEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6805ED318289AFE0043B6DD /* RMSTextEntryCell.xib */; };
 		E6BF3045182B3AF500D6F009 /* RMSDynamicSectionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BF3044182B3AF500D6F009 /* RMSDynamicSectionSpec.m */; };
 		E6BF3047182B3EC600D6F009 /* RMSFormViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BF3046182B3EC600D6F009 /* RMSFormViewControllerSpec.m */; };
+		E6BF3049182BC96700D6F009 /* RMSDataCellSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BF3048182BC96700D6F009 /* RMSDataCellSpec.m */; };
+		E6BF304B182BCBAE00D6F009 /* RMSTargetActionCellSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BF304A182BCBAE00D6F009 /* RMSTargetActionCellSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +165,8 @@
 		E6805ED318289AFE0043B6DD /* RMSTextEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMSTextEntryCell.xib; sourceTree = "<group>"; };
 		E6BF3044182B3AF500D6F009 /* RMSDynamicSectionSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDynamicSectionSpec.m; sourceTree = "<group>"; };
 		E6BF3046182B3EC600D6F009 /* RMSFormViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSFormViewControllerSpec.m; sourceTree = "<group>"; };
+		E6BF3048182BC96700D6F009 /* RMSDataCellSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSDataCellSpec.m; sourceTree = "<group>"; };
+		E6BF304A182BCBAE00D6F009 /* RMSTargetActionCellSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSTargetActionCellSpec.m; sourceTree = "<group>"; };
 		ECC5100448564698ADE4001D /* Pods-RMSTableViewTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMSTableViewTests.xcconfig"; path = "Pods/Pods-RMSTableViewTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -256,6 +260,8 @@
 				E63312D3182871A700FBFBCE /* RMSTableViewControllerSpec.m */,
 				E6BF3044182B3AF500D6F009 /* RMSDynamicSectionSpec.m */,
 				E6BF3046182B3EC600D6F009 /* RMSFormViewControllerSpec.m */,
+				E6BF3048182BC96700D6F009 /* RMSDataCellSpec.m */,
+				E6BF304A182BCBAE00D6F009 /* RMSTargetActionCellSpec.m */,
 				E63312CE182871A700FBFBCE /* Supporting Files */,
 			);
 			path = RMSTableViewTests;
@@ -709,8 +715,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E63312D4182871A700FBFBCE /* RMSTableViewControllerSpec.m in Sources */,
+				E6BF304B182BCBAE00D6F009 /* RMSTargetActionCellSpec.m in Sources */,
 				E6BF3047182B3EC600D6F009 /* RMSFormViewControllerSpec.m in Sources */,
 				E6BF3045182B3AF500D6F009 /* RMSDynamicSectionSpec.m in Sources */,
+				E6BF3049182BC96700D6F009 /* RMSDataCellSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
