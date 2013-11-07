@@ -10,8 +10,8 @@
 #import "RMSFormSection.h"
 #import "RMSTextEntryCell.h"
 
-static NSString * plistExtension = @"plist";
-static NSString * JSONExtension = @"json";
+static NSString * RMSFileExtensionPropertyList = @"plist";
+static NSString * RMSFileExtensionJSON = @"json";
 
 NSString * const RMSFormKeySectionRows = @"rows";
 
@@ -41,16 +41,16 @@ NSString * const RMSFormKeyEnabled = @"enabled";
 }
 
 - (id)initWithStyle:(UITableViewStyle)style descriptorNamed:(NSString *)descriptorName {
-    NSString *extension = [descriptorName pathExtension];
+    NSString *descriptorExtension = [descriptorName pathExtension];
     NSString *descriptorRoot = [descriptorName stringByDeletingPathExtension];
 
-    extension = [extension length] > 0 ? extension : plistExtension;
+    descriptorExtension = [descriptorExtension length] > 0 ? descriptorExtension : RMSFileExtensionPropertyList;
 
-    NSString *descriptorPath = [[NSBundle mainBundle] pathForResource:descriptorRoot ofType:extension];
+    NSString *descriptorPath = [[NSBundle mainBundle] pathForResource:descriptorRoot ofType:descriptorExtension];
     NSArray *descriptor = nil;
-    if ([extension isEqualToString:plistExtension]) {
+    if ([descriptorExtension isEqualToString:RMSFileExtensionPropertyList]) {
         descriptor = [NSArray arrayWithContentsOfFile:descriptorPath];
-    } else if ([extension isEqualToString:JSONExtension]) {
+    } else if ([descriptorExtension isEqualToString:RMSFileExtensionJSON]) {
         descriptor = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:descriptorPath]
                                                      options:0
                                                        error:NULL];
