@@ -18,6 +18,8 @@ typedef void (^RMSObjectSelectedBlock)(id object);
 
 - (void)arrayPickerController:(RMSArrayPickerController *)arrayPickerController willReturnCell:(UITableViewCell *)cell forObject:(id)object;
 
+- (NSArray *)choicesForArrayPickerController:(RMSArrayPickerController *)arrayPickerController;
+
 @end
 
 @interface RMSArrayPickerController : UITableViewController

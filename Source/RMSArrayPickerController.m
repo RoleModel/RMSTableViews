@@ -39,6 +39,16 @@
         self.tableView.backgroundView = nil;
         self.tableView.backgroundColor = self.backgroundColor;
 	}
+
+    if ([self.delegate respondsToSelector:@selector(choicesForArrayPickerController:)]) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSArray *choices = [self.delegate choicesForArrayPickerController:self];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.choices = choices;
+                [self.tableView reloadData];
+            });
+        });
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
