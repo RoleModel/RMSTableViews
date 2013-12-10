@@ -34,8 +34,10 @@
 
     RMSProfileViewController *profileViewController = [[RMSProfileViewController alloc] initWithStyle:UITableViewStyleGrouped descriptorNamed:@"ProfileViewController"];
     profileViewController.inRegistrationMode = YES;
-    profileViewController.profile = [[RMSProfile alloc] initWithDictionary:@{@"firstName" : @"Tony",
-                                                                             @"lastName" : @"Ingraldi"}];
+    profileViewController.profile = [[RMSProfile alloc] initWithDictionary:@{@"firstName" : @"Elias",
+                                                                             @"lastName" : @"Boudinot",
+                                                                             @"birthday" : @"May 2, 1740",
+                                                                             @"gender" : @"male"}];
     UIViewController *navigationController = [[UINavigationController alloc] initWithRootViewController:profileViewController];
     self.window.rootViewController = navigationController;
     self.window.backgroundColor = [UIColor whiteColor];
