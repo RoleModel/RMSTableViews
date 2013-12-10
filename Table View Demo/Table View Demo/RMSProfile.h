@@ -26,7 +26,6 @@
 
 @interface RMSProfile : RMSModel
 
-@property (nonatomic) NSString *profileId;
 @property (nonatomic) NSString *email;
 @property (nonatomic) NSString *firstName;
 @property (nonatomic) NSString *lastName;
@@ -36,7 +35,7 @@
 @property (nonatomic) NSDate *birthday;
 @property (nonatomic) NSString *gender;
 @property (nonatomic) NSNumber *height;
-@property (nonatomic) NSNumber *handicap;
+@property (nonatomic) NSNumber *battingAverage;
 @property (nonatomic) NSString *stance;
 @property (nonatomic) NSNumber *isDefault;
 

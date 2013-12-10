@@ -30,7 +30,6 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _attributes = @[
-                        @"profileId",
                         @"email",
                         @"firstName",
                         @"lastName",
@@ -40,7 +39,7 @@
                         @"birthday",
                         @"gender",
                         @"height",
-                        @"handicap",
+                        @"battingAverage",
                         @"stance",
                         @"isDefault"
                         ];
@@ -91,7 +90,7 @@
 }
 
 - (BOOL)canBeDeleted {
-    return ![self isDefaultBool] && (self.profileId != nil);
+    return ![self isDefaultBool];
 }
 
 - (BOOL)isDefaultBool {

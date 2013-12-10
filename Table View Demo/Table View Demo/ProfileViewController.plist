@@ -125,6 +125,16 @@
 					<string>Birthday</string>
 				</dict>
 			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>properties</key>
+		<dict>
+			<key>headerTitle</key>
+			<string>Vital Stats</string>
+		</dict>
+		<key>rows</key>
+		<array>
 			<dict>
 				<key>className</key>
 				<string>RMSHeightPickerCell</string>
@@ -138,27 +148,17 @@
 					<string>Height</string>
 				</dict>
 			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>properties</key>
-		<dict>
-			<key>headerTitle</key>
-			<string>Golf Information</string>
-		</dict>
-		<key>rows</key>
-		<array>
 			<dict>
 				<key>className</key>
-				<string>RMSHandicapPickerCell</string>
+				<string>RMSBattingAveragePickerCell</string>
 				<key>properties</key>
 				<dict>
 					<key>representedObject</key>
 					<string>:profile</string>
 					<key>keyPath</key>
-					<string>handicap</string>
+					<string>battingAverage</string>
 					<key>labelText</key>
-					<string>Handicap</string>
+					<string>Batting Average</string>
 				</dict>
 			</dict>
 			<dict>

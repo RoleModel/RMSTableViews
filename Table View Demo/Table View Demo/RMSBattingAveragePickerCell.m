@@ -1,5 +1,5 @@
 //
-//  RMSHandicapPickerCell.h
+//  RMSBattingAveragePickerCell.m
 //
 // Copyright (c) 2013 RoleModel Software, Inc
 // 
@@ -21,8 +21,12 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import "RMSArrayPickerCell.h"
+#import "RMSBattingAveragePickerCell.h"
 
-@interface RMSHandicapPickerCell : RMSArrayPickerCell
+@implementation RMSBattingAveragePickerCell
+
+- (NSArray *)choices {
+  return @[@".000-.150", @".151-.250", @".250-.300", @".300+"];
+}
 
 @end

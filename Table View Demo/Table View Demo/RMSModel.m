@@ -24,7 +24,7 @@
 #import "RMSModel.h"
 
 /*
- * Return the key with a lower case first character (i.e. ProfileId => profileId)
+ * Return the key with a lower case first character (i.e. FirstName => firstName)
  */
 NSString *normalize(NSString *key) {
     NSString *normalizedKey = nil;
