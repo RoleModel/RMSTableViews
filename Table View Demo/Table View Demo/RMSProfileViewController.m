@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.m
+//  RMSProfileViewController.m
 //
 // Copyright (c) 2013 RoleModel Software, Inc
 // 
@@ -22,14 +22,14 @@
 //
 
 #import "RMSProfile.h"
-#import "ProfileViewController.h"
+#import "RMSProfileViewController.h"
 #import "RMSFormSection.h"
 #import "RMSButtonCell.h"
 #import "RMSSettingsViewController.h"
 #import "RMSDynamicSection.h"
 #import "RMSWordViewController.h"
 
-@interface ProfileViewController ()
+@interface RMSProfileViewController ()
 
 @property (nonatomic, strong) RMSButtonCell *saveButton;
 @property (nonatomic, strong) RMSFormSection *accountSection;
@@ -38,7 +38,7 @@
 
 @end
 
-@implementation ProfileViewController
+@implementation RMSProfileViewController
 
 #pragma mark plist object mapping
 

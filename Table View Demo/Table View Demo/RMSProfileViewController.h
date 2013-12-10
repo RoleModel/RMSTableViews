@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.h
+//  RMSProfileViewController.h
 //
 //
 // Copyright (c) 2013 RoleModel Software, Inc
@@ -27,7 +27,7 @@
 
 @class RMSProfile;
 
-@interface ProfileViewController : RMSFormViewController
+@interface RMSProfileViewController : RMSFormViewController
 
 @property (nonatomic, strong) RMSProfile *profile;
 @property (nonatomic) BOOL inRegistrationMode;

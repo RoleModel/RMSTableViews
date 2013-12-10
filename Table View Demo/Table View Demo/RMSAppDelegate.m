@@ -22,7 +22,7 @@
 //
 
 #import "RMSAppDelegate.h"
-#import "ProfileViewController.h"
+#import "RMSProfileViewController.h"
 #import "RMSProfile.h"
 
 @implementation RMSAppDelegate
@@ -32,7 +32,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
-    ProfileViewController *profileViewController = [[ProfileViewController alloc] initWithStyle:UITableViewStyleGrouped descriptorNamed:@"ProfileViewController"];
+    RMSProfileViewController *profileViewController = [[RMSProfileViewController alloc] initWithStyle:UITableViewStyleGrouped descriptorNamed:@"ProfileViewController"];
     profileViewController.inRegistrationMode = YES;
     profileViewController.profile = [[RMSProfile alloc] initWithDictionary:@{@"firstName" : @"Tony",
                                                                              @"lastName" : @"Ingraldi"}];
