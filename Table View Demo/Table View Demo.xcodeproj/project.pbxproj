@@ -22,7 +22,7 @@
 		E63312D4182871A700FBFBCE /* RMSTableViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E63312D3182871A700FBFBCE /* RMSTableViewControllerSpec.m */; };
 		E648DCB21918168400EDC684 /* RMSRedSection.m in Sources */ = {isa = PBXBuildFile; fileRef = E648DCB11918168400EDC684 /* RMSRedSection.m */; };
 		E6805E771828759B0043B6DD /* RMSProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E5C1828759B0043B6DD /* RMSProfileViewController.m */; };
-		E6805E781828759B0043B6DD /* ProfileViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6805E5D1828759B0043B6DD /* ProfileViewController.plist */; };
+		E6805E781828759B0043B6DD /* RMSProfileViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6805E5D1828759B0043B6DD /* RMSProfileViewController.plist */; };
 		E6805E791828759B0043B6DD /* RMSBattingAveragePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E5F1828759B0043B6DD /* RMSBattingAveragePickerCell.m */; };
 		E6805E7A1828759B0043B6DD /* RMSHeightPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E611828759B0043B6DD /* RMSHeightPickerCell.m */; };
 		E6805E7B1828759B0043B6DD /* RMSHeightPickerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6805E621828759B0043B6DD /* RMSHeightPickerView.storyboard */; };
@@ -97,7 +97,7 @@
 		E648DCB11918168400EDC684 /* RMSRedSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSRedSection.m; sourceTree = "<group>"; };
 		E6805E5B1828759B0043B6DD /* RMSProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSProfileViewController.h; sourceTree = "<group>"; };
 		E6805E5C1828759B0043B6DD /* RMSProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSProfileViewController.m; sourceTree = "<group>"; };
-		E6805E5D1828759B0043B6DD /* ProfileViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProfileViewController.plist; sourceTree = "<group>"; };
+		E6805E5D1828759B0043B6DD /* RMSProfileViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RMSProfileViewController.plist; sourceTree = "<group>"; };
 		E6805E5E1828759B0043B6DD /* RMSBattingAveragePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSBattingAveragePickerCell.h; sourceTree = "<group>"; };
 		E6805E5F1828759B0043B6DD /* RMSBattingAveragePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSBattingAveragePickerCell.m; sourceTree = "<group>"; };
 		E6805E601828759B0043B6DD /* RMSHeightPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSHeightPickerCell.h; sourceTree = "<group>"; };
@@ -343,7 +343,7 @@
 			children = (
 				E6805E5B1828759B0043B6DD /* RMSProfileViewController.h */,
 				E6805E5C1828759B0043B6DD /* RMSProfileViewController.m */,
-				E6805E5D1828759B0043B6DD /* ProfileViewController.plist */,
+				E6805E5D1828759B0043B6DD /* RMSProfileViewController.plist */,
 			);
 			name = "Profile View Controller";
 			sourceTree = "<group>";
@@ -619,7 +619,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6805E781828759B0043B6DD /* ProfileViewController.plist in Resources */,
+				E6805E781828759B0043B6DD /* RMSProfileViewController.plist in Resources */,
 				E6805E7B1828759B0043B6DD /* RMSHeightPickerView.storyboard in Resources */,
 				E63312B9182871A700FBFBCE /* InfoPlist.strings in Resources */,
 				E6805E811828759B0043B6DD /* RMSSettingsViewController.json in Resources */,

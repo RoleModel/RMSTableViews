@@ -57,6 +57,7 @@ NSString * const RMSFormKeyEnabled = @"enabled";
 }
 
 - (id)initWithStyle:(UITableViewStyle)style descriptorNamed:(NSString *)descriptorName {
+    descriptorName = descriptorName ? descriptorName : [[self class] description];
     NSString *descriptorExtension = [descriptorName pathExtension];
     NSString *descriptorRoot = [descriptorName stringByDeletingPathExtension];
 

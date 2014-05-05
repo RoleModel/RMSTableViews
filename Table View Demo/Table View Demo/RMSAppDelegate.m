@@ -32,7 +32,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
-    RMSProfileViewController *profileViewController = [[RMSProfileViewController alloc] initWithStyle:UITableViewStyleGrouped descriptorNamed:@"ProfileViewController"];
+    RMSProfileViewController *profileViewController = [[RMSProfileViewController alloc] initWithStyle:UITableViewStyleGrouped descriptorNamed:nil];
     profileViewController.inRegistrationMode = YES;
     profileViewController.profile = [[RMSProfile alloc] initWithDictionary:@{@"firstName" : @"Elias",
                                                                              @"lastName" : @"Boudinot",
