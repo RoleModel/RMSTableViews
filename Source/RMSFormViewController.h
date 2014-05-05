@@ -27,7 +27,7 @@
 
 extern NSString * const RMSFormKeySectionRows;
 
-extern NSString * const RMSFormKeyCellClassName;
+extern NSString * const RMSFormKeyClassName;
 extern NSString * const RMSFormKeyProperties;
 extern NSString * const RMSFormKeyBindVariable;
 extern NSString * const RMSFormKeyEnabled;

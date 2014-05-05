@@ -28,9 +28,10 @@
 static NSString * RMSFileExtensionPropertyList = @"plist";
 static NSString * RMSFileExtensionJSON = @"json";
 
+NSString * const RMSFormKeyClassName = @"className";
+
 NSString * const RMSFormKeySectionRows = @"rows";
 
-NSString * const RMSFormKeyCellClassName = @"className";
 NSString * const RMSFormKeyProperties = @"properties";
 NSString * const RMSFormKeyBindVariable = @"bindVariable";
 NSString * const RMSFormKeyEnabled = @"enabled";
@@ -191,7 +192,7 @@ NSString * const RMSFormKeyEnabled = @"enabled";
 }
 
 - (RMSFormCell *)cellFromDictionary:(NSDictionary *)rawDictionary {
-    id formCellClass = NSClassFromString(rawDictionary[RMSFormKeyCellClassName]);
+    id formCellClass = NSClassFromString(rawDictionary[RMSFormKeyClassName]);
     RMSFormCell *formCell = [formCellClass cell];
 
     [self setProperties:formCell withRawDictionary:rawDictionary];
@@ -228,7 +229,9 @@ NSString * const RMSFormKeyEnabled = @"enabled";
                 }
             }
 
-            RMSFormSection *section = [[RMSFormSection alloc] initWithRows:rows];
+            id sectionClass = NSClassFromString(rawSection[RMSFormKeyClassName]);
+            sectionClass = sectionClass ? sectionClass : [RMSFormSection class];
+            RMSFormSection *section = [[sectionClass alloc] initWithRows:rows];
             [self setProperties:section withRawDictionary:rawSection];
 
             [self bindObject:section dictionary:rawSection];

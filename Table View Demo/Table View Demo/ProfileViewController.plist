@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>className</key>
+		<string>RMSRedSection</string>
 		<key>bindVariable</key>
 		<string>accountSection</string>
 		<key>properties</key>

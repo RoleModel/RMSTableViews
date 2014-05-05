@@ -20,6 +20,7 @@
 		E63312CA182871A700FBFBCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63312B2182871A700FBFBCE /* UIKit.framework */; };
 		E63312D2182871A700FBFBCE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E63312D0182871A700FBFBCE /* InfoPlist.strings */; };
 		E63312D4182871A700FBFBCE /* RMSTableViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E63312D3182871A700FBFBCE /* RMSTableViewControllerSpec.m */; };
+		E648DCB21918168400EDC684 /* RMSRedSection.m in Sources */ = {isa = PBXBuildFile; fileRef = E648DCB11918168400EDC684 /* RMSRedSection.m */; };
 		E6805E771828759B0043B6DD /* RMSProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E5C1828759B0043B6DD /* RMSProfileViewController.m */; };
 		E6805E781828759B0043B6DD /* ProfileViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6805E5D1828759B0043B6DD /* ProfileViewController.plist */; };
 		E6805E791828759B0043B6DD /* RMSBattingAveragePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6805E5F1828759B0043B6DD /* RMSBattingAveragePickerCell.m */; };
@@ -92,6 +93,8 @@
 		E63312CF182871A700FBFBCE /* RMSTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RMSTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		E63312D1182871A700FBFBCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E63312D3182871A700FBFBCE /* RMSTableViewControllerSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMSTableViewControllerSpec.m; sourceTree = "<group>"; };
+		E648DCB01918168400EDC684 /* RMSRedSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSRedSection.h; sourceTree = "<group>"; };
+		E648DCB11918168400EDC684 /* RMSRedSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSRedSection.m; sourceTree = "<group>"; };
 		E6805E5B1828759B0043B6DD /* RMSProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMSProfileViewController.h; sourceTree = "<group>"; };
 		E6805E5C1828759B0043B6DD /* RMSProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMSProfileViewController.m; sourceTree = "<group>"; };
 		E6805E5D1828759B0043B6DD /* ProfileViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProfileViewController.plist; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 			children = (
 				E63312BD182871A700FBFBCE /* RMSAppDelegate.h */,
 				E63312BE182871A700FBFBCE /* RMSAppDelegate.m */,
+				E648DCB01918168400EDC684 /* RMSRedSection.h */,
+				E648DCB11918168400EDC684 /* RMSRedSection.m */,
 				E6805E52182875410043B6DD /* Model */,
 				E6805E54182875410043B6DD /* Views */,
 				E6805E55182875420043B6DD /* Controllers */,
@@ -699,6 +704,7 @@
 				E6805EBD182876950043B6DD /* RMSDatePickerCell.m in Sources */,
 				E6805E861828759B0043B6DD /* UIAlertView+RMS.m in Sources */,
 				E6805EC3182876950043B6DD /* RMSFormViewController.m in Sources */,
+				E648DCB21918168400EDC684 /* RMSRedSection.m in Sources */,
 				E6805EC2182876950043B6DD /* RMSFormSection.m in Sources */,
 				E6805E791828759B0043B6DD /* RMSBattingAveragePickerCell.m in Sources */,
 				E6805E7A1828759B0043B6DD /* RMSHeightPickerCell.m in Sources */,
