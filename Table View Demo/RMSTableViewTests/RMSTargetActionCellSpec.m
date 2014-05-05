@@ -72,7 +72,7 @@ describe(@"RMSTargetActionCellSpec", ^{
         });
 
         it(@"should send the action message to it's target", ^{
-            [[theValue(actor.state) should] equal:theValue(!initialState)];
+            [[@(actor.state) should] equal:@(!initialState)];
         });
     });
 });

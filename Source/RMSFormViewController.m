@@ -145,7 +145,10 @@ NSString * const RMSFormKeyEnabled = @"enabled";
 
 - (NSDictionary *)objectDictionary {
     if (_objectDictionary == nil) {
-        _objectDictionary = [self objectSubstitionDictionary];
+        NSMutableDictionary *objectDictionary = [NSMutableDictionary dictionary];
+        objectDictionary[@":self"] = self;
+        [objectDictionary addEntriesFromDictionary:[self objectSubstitionDictionary]];
+        _objectDictionary = [NSDictionary dictionaryWithDictionary:objectDictionary];
     }
 
     return _objectDictionary;

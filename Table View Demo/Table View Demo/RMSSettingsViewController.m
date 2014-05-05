@@ -36,12 +36,6 @@ NSString * const RMSDefaultsFavoriteColorKey = @"FavoriteColorKey";
 
 @implementation RMSSettingsViewController
 
-- (NSDictionary *)objectSubstitionDictionary {
-    return @{
-             @":self" : self,
-             };
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 

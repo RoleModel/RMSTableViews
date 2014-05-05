@@ -44,7 +44,6 @@
 
 - (NSDictionary *)objectSubstitionDictionary {
     return @{
-             @":self" : self,
              @":profile" : self.profile,
              @":whiteColor" : [UIColor whiteColor],
              @":blackColor" : [UIColor blackColor],

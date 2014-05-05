@@ -41,7 +41,7 @@ static NSString * const RMSTestFormSecondSectionTitle = @"General Information";
 @implementation RMSTestForm
 
 - (NSDictionary *)objectSubstitionDictionary {
-    return @{@":self" : self,
+    return @{
              @":genders" : @[@"male", @"female"]
              };
 }
