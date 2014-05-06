@@ -64,20 +64,36 @@ NSString * const RMSFormKeyEnabled = @"enabled";
     descriptorExtension = [descriptorExtension length] > 0 ? descriptorExtension : RMSFileExtensionPropertyList;
 
     NSString *descriptorPath = [[NSBundle mainBundle] pathForResource:descriptorRoot ofType:descriptorExtension];
+    NSData *descriptorData = [NSData dataWithContentsOfFile:descriptorPath];
+    RMSFormDescriptorType descriptorType = [descriptorExtension isEqualToString:RMSFileExtensionPropertyList] ? RMSFormDescriptorTypePlist : RMSFormDescriptorTypeJSON;
+
+    return [self initWithStyle:style rawDescriptor:descriptorData type:descriptorType];
+}
+
+- (id)initWithStyle:(UITableViewStyle)style rawDescriptor:(NSData *)rawDescriptor type:(RMSFormDescriptorType)descriptorType {
     NSArray *descriptor = nil;
-    if ([descriptorExtension isEqualToString:RMSFileExtensionPropertyList]) {
-        descriptor = [NSArray arrayWithContentsOfFile:descriptorPath];
-    } else if ([descriptorExtension isEqualToString:RMSFileExtensionJSON]) {
-        descriptor = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:descriptorPath]
+    NSError *error = nil;
+    if (descriptorType == RMSFormDescriptorTypePlist) {
+        descriptor = [NSPropertyListSerialization propertyListWithData:rawDescriptor
+                                                               options:NSPropertyListImmutable
+                                                                format:NULL
+                                                                 error:&error];
+    } else if (descriptorType == RMSFormDescriptorTypeJSON) {
+        descriptor = [NSJSONSerialization JSONObjectWithData:rawDescriptor
                                                      options:0
-                                                       error:NULL];
+                                                       error:&error];
     } else {
         @throw [NSException exceptionWithName:NSInvalidArgumentException
                                        reason:@"Illegal extension specified for descriptor file. (Must be either plist or json)"
                                      userInfo:nil];
     }
+
+    if (error) {
+        DLog(@"Failed to decode descriptor: %@", [error localizedDescription]);
+    }
     
     return [self initWithStyle:style descriptor:descriptor];
+
 }
 
 - (NSDictionary *)objectSubstitionDictionary {

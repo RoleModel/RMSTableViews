@@ -139,6 +139,94 @@ describe(@"RMSFormViewControllerSpec", ^{
             [[NSStringFromClass([cell class]) should] equal:@"RMSArrayPickerCell"];
         });
     });
+
+    context(@"when instantiated with a raw descriptor", ^{
+        __block RMSTestForm *testForm = nil;
+        const char *descriptorChars = "[ " \
+                                "{ "\
+                                    "\"bindVariable\" : \"firstSection\"," \
+                                    "\"properties\" : {" \
+                                            "\"headerTitle\" : \"Account Information\"" \
+                                            "}," \
+                                    "\"rows\" : [" \
+                                            "{" \
+                                                "\"className\" : \"RMSTextEntryCell\"," \
+                                                "\"properties\" : {" \
+                                                        "\"keyPath\" : \"firstName\"," \
+                                                        "\"labelText\" : \"First name\"," \
+                                                        "\"representedObject\" : \":self\"" \
+                                                        "}" \
+                                                "}," \
+                                            "{" \
+                                                "\"className\" : \"RMSTextEntryCell\"," \
+                                                "\"properties\" : {" \
+                                                        "\"keyPath\" : \"lastName\"," \
+                                                        "\"labelText\" : \"Last name\"," \
+                                                        "\"representedObject\" : \":self\"" \
+                                                        "}" \
+                                                "}" \
+                                            "]" \
+                                    "}," \
+                                "{" \
+                                    "\"properties\" : {" \
+                                            "\"headerTitle\" : \"General Information\"" \
+                                            "}," \
+                                    "\"rows\" : [" \
+                                            "{" \
+                                                "\"className\" : \"RMSArrayPickerCell\"," \
+                                                "\"properties\" : {" \
+                                                        "\"choices\" : \":genders\"," \
+                                                        "\"keyPath\" : \"gender\"," \
+                                                        "\"labelText\" : \"Gender\"," \
+                                                        "\"representedObject\" : \":self\"" \
+                                                        "}" \
+                                                "}" \
+                                            "]" \
+                                    "}]";
+        NSData *descriptor = [NSData dataWithBytes:descriptorChars length:strlen(descriptorChars)];
+
+        beforeAll(^{
+            testForm = [[RMSTestForm alloc] initWithStyle:UITableViewStylePlain rawDescriptor:descriptor type:RMSFormDescriptorTypeJSON];
+        });
+
+        it(@"should have two sections", ^{
+            [[theValue([testForm.sections count]) should] equal:theValue(2)];
+        });
+
+        it(@"should have two rows in the first section", ^{
+            [[theValue([testForm.sections[0] rowCount]) should] equal:theValue(2)];
+        });
+
+        it(@"should have one row in the second section", ^{
+            [[theValue([testForm.sections[1] rowCount]) should] equal:theValue(1)];
+        });
+
+        it(@"should have the proper title on section one", ^{
+            RMSFormSection *firstSection = testForm.sections[0];
+            [[firstSection.headerTitle should] equal:RMSTestFormFirstSectionTitle];
+        });
+
+        it(@"should have the proper title on section two", ^{
+            RMSFormSection *secondSection = testForm.sections[1];
+            [[secondSection.headerTitle should] equal:RMSTestFormSecondSectionTitle];
+        });
+
+        it(@"should have firstSection bound to the first section", ^{
+            RMSFormSection *firstSection = testForm.sections[0];
+            [[testForm.firstSection should] equal:firstSection];
+        });
+
+        it(@"should return the expected cell types", ^{
+            UITableViewCell *cell = [testForm tableView:testForm.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+            [[NSStringFromClass([cell class]) should] equal:@"RMSTextEntryCell"];
+
+            cell = [testForm tableView:testForm.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
+            [[NSStringFromClass([cell class]) should] equal:@"RMSTextEntryCell"];
+
+            cell = [testForm tableView:testForm.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
+            [[NSStringFromClass([cell class]) should] equal:@"RMSArrayPickerCell"];
+        });
+    });
 });
 
 SPEC_END

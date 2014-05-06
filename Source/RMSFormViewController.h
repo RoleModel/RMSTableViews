@@ -24,6 +24,10 @@
 #import "RMSTableViewController.h"
 #import "RMSFormCell.h"
 
+typedef NS_ENUM(NSInteger, RMSFormDescriptorType) {
+    RMSFormDescriptorTypePlist,
+    RMSFormDescriptorTypeJSON
+};
 
 extern NSString * const RMSFormKeySectionRows;
 
@@ -85,5 +89,16 @@ extern NSString * const RMSFormKeyEnabled;
  \returns The RMSFormViewController instance.
  */
 - (id)initWithStyle:(UITableViewStyle)style descriptorNamed:(NSString *)descriptorName;
+
+/*!
+ \brief Initializer for RMSFormViewControllers described by the supplied descriptor string.
+
+ \param style The UITableViewStyle to use for the table.
+ \param rawDescriptor The content of a plist- or JSON-formatted descriptor.
+ \param descriptorType The type of the raw form descriptor.
+
+ \returns The RMSFormViewController instance.
+ */
+- (id)initWithStyle:(UITableViewStyle)style rawDescriptor:(NSData *)rawDescriptor type:(RMSFormDescriptorType)descriptorType;
 
 @end
