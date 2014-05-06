@@ -61,6 +61,8 @@ extern NSString * const RMSFormKeyEnabled;
 
  The default implementation returns nil. Subclasses must implement this method if the
  form descriptor used when the class is instantiated contains any colon-prefixed references.
+ In all cases, the base implementation will add a mapping for ":self" to the object
+ substitution dictionary. The ":self" key is mapped to the RMSFormViewController instance.
 
  \note This method is invoked once just prior to UITableView cell generation.
 
@@ -82,9 +84,16 @@ extern NSString * const RMSFormKeyEnabled;
  \brief Initializer for RMSFormViewControllers described by a plist or JSON-formatted descriptor.
 
  \param style The UITableViewStyle to use for the table.
- \param descriptor The name of the file-based form descriptor. If a file extension is present 
+ \param descriptorName The name of the file-based form descriptor.
+ 
+ \note If a file extension is present
  on the descriptorName, it must be either json or plist. If no extension is given, a resource 
  with a plist extension will be sought.
+ 
+ If descriptorName is not specified, the name of the
+ descriptor will be derived from the name of the RMSFormViewController subclass. For example, a
+ form descriptor named XYZFormViewController.plist will be assumed for a subclass named
+ XYZFormViewController.
  
  \returns The RMSFormViewController instance.
  */

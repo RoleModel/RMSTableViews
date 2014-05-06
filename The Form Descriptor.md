@@ -6,14 +6,18 @@ A form descriptor specifies the sections and cells present in the UITableView as
 
 Certain values specified in a form descriptor can reference objects that are defined outside of the descriptor. References to these external objects are supplied by an **RMSFormViewController** subclass in a object substitution dictionary.
 
-Within the form descriptor itself, the object references are given as colon-prefixed strings. These strings must be present as keys in the object substitution dictionary. If a non-existent key is referenced, an exception will be thrown during cell generation. Not all values in the form descriptor support the use of variable substitution. The values that allow substitution are noted in the discussion that follows. 
+Within the form descriptor itself, the object references are given as colon-prefixed strings. These strings must be present as keys in the object substitution dictionary. If a non-existent key is referenced, an exception will be thrown during cell generation. Not all values in the form descriptor support the use of variable substitution. The values that allow substitution are noted in the discussion that follows. By default, the object substition dictionary will contain a mapping for the key `:self`. This key will be mapped to the **RMSFormViewController** instance.
 
 ## Section Dictionary Keys
 
 `bindVariable`
 
 A string specifiying key to bind to the section. The specified key must reference a key-value coding compliant property on the RMSFormViewController subclass. It would make sense for this key to reference a property of type **id** or **RMSFormSection**.
-                
+
+`className` 
+          
+A string specifying the name of an RMSFormSection subclass to be instantiated for the section. This key is optional. If not specified, an instance of RMSFormSection will be created.
+
 `enabled` *Allows value substitution*
 
 Controls the presence of the section in the table. Can be specified as a either a literal or a colon-prefixed string referencing a substitution object to be evaluated as a boolean. 
