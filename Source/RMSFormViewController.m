@@ -89,7 +89,9 @@ NSString * const RMSFormKeyEnabled = @"enabled";
     }
 
     if (error) {
-        DLog(@"Failed to decode descriptor: %@", [error localizedDescription]);
+        @throw [NSException exceptionWithName:NSInvalidArgumentException
+                                       reason:[@"Descriptor deserialization failed: " stringByAppendingString:[error localizedDescription]]
+                                     userInfo:nil];
     }
     
     return [self initWithStyle:style descriptor:descriptor];
