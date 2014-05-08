@@ -42,7 +42,7 @@
 
 #pragma mark plist object mapping
 
-- (NSDictionary *)objectSubstitionDictionary {
+- (NSDictionary *)objectSubstitutionDictionary {
     return @{
              @":profile" : self.profile,
              @":whiteColor" : [UIColor whiteColor],

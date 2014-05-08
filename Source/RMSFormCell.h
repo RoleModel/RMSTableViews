@@ -55,7 +55,7 @@
  \param formCell The cell that is sending this message
  \param viewController The UIViewController to be presented
  */
-- (void)formCell:(RMSFormCell *)formCell presentController:(UIViewController *)viewController;
+- (void)formCell:(RMSFormCell *)formCell presentViewController:(UIViewController *)viewController;
 
 @end
 

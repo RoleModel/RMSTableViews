@@ -57,7 +57,7 @@ extern NSString * const RMSFormKeyEnabled;
  These references are specified as string literals prefixed by a colon character. For example, if
  the literal string \b :someVariable is entered as a value in the form descriptor,
  then \b :someVariable must be present as a key in the dictionary
- returned by objectSubstitionDictionary.
+ returned by objectSubstitutionDictionary.
 
  The default implementation returns nil. Subclasses must implement this method if the
  form descriptor used when the class is instantiated contains any colon-prefixed references.
@@ -68,7 +68,7 @@ extern NSString * const RMSFormKeyEnabled;
 
  \return The object substitution dictionary.
  */
-- (NSDictionary *)objectSubstitionDictionary;
+- (NSDictionary *)objectSubstitutionDictionary;
 
 /*!
  \brief Designated initializer for RMSFormViewController.

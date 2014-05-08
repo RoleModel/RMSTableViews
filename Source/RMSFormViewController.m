@@ -98,7 +98,7 @@ NSString * const RMSFormKeyEnabled = @"enabled";
 
 }
 
-- (NSDictionary *)objectSubstitionDictionary {
+- (NSDictionary *)objectSubstitutionDictionary {
     return @{};
 }
 
@@ -155,7 +155,7 @@ NSString * const RMSFormKeyEnabled = @"enabled";
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
-- (void)formCell:(RMSFormCell *)formCell presentController:(UIViewController *)viewController {
+- (void)formCell:(RMSFormCell *)formCell presentViewController:(UIViewController *)viewController {
     [self hideKeyboard:nil];
     [self presentViewController:viewController animated:YES completion:nil];
 }
@@ -166,7 +166,7 @@ NSString * const RMSFormKeyEnabled = @"enabled";
     if (_objectDictionary == nil) {
         NSMutableDictionary *objectDictionary = [NSMutableDictionary dictionary];
         objectDictionary[@":self"] = self;
-        [objectDictionary addEntriesFromDictionary:[self objectSubstitionDictionary]];
+        [objectDictionary addEntriesFromDictionary:[self objectSubstitutionDictionary]];
         _objectDictionary = [NSDictionary dictionaryWithDictionary:objectDictionary];
     }
 
