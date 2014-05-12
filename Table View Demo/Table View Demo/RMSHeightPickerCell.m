@@ -31,7 +31,7 @@
     
     if (self.value) {
         NSInteger height = [self.value integerValue];
-        self.detailTextLabel.text = [NSString stringWithFormat:@"%d' %d\"", height / 12, height % 12];
+        self.detailTextLabel.text = [NSString stringWithFormat:@"%ld' %ld\"", height / 12, height % 12];
     } else {
         self.detailTextLabel.text = @"";
     }
