@@ -41,6 +41,7 @@ NSString * const RMSFormKeyEnabled = @"enabled";
 
 @property (nonatomic, strong) NSArray *descriptor;
 @property (nonatomic, strong) NSDictionary *objectDictionary;
+@property (nonatomic, strong) NSIndexPath *dirtyIndexPath;
 
 @end
 
@@ -100,6 +101,14 @@ NSString * const RMSFormKeyEnabled = @"enabled";
 
 - (NSDictionary *)objectSubstitutionDictionary {
     return @{};
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    if (self.dirtyIndexPath) {
+        [self.tableView reloadRowsAtIndexPaths:@[self.dirtyIndexPath]
+                              withRowAnimation:UITableViewRowAnimationNone];
+    }
+    [super viewWillAppear:animated];
 }
 
 - (void)viewDidLoad {
@@ -270,6 +279,11 @@ NSString * const RMSFormKeyEnabled = @"enabled";
     [super sectionGenerationDidComplete];
     
     [self setNextResponders];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    self.dirtyIndexPath = indexPath;
 }
 
 @end
