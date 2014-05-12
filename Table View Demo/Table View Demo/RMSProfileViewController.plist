@@ -184,6 +184,8 @@
 		</array>
 	</dict>
 	<dict>
+		<key>bindVariable</key>
+		<string>saveSection</string>
 		<key>rows</key>
 		<array>
 			<dict>

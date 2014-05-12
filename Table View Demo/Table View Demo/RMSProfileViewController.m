@@ -21,6 +21,8 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
+static void * RMSProfileViewControllerContext = &RMSProfileViewControllerContext;
+
 #import "RMSProfile.h"
 #import "RMSProfileViewController.h"
 #import "RMSFormSection.h"
@@ -32,9 +34,11 @@
 @interface RMSProfileViewController ()
 
 @property (nonatomic, strong) RMSButtonCell *saveButton;
+@property (nonatomic, strong) RMSFormSection *saveSection;
 @property (nonatomic, strong) RMSFormSection *accountSection;
 @property (nonatomic, strong) NSString *passwordOne;
 @property (nonatomic, strong) NSString *passwordTwo;
+@property (nonatomic) BOOL isObservingChanges;
 
 @end
 
@@ -61,6 +65,7 @@
 - (void)viewDidLoad {
     DLog(@"");
     [super viewDidLoad];
+    self.isObservingChanges = NO;
 
     self.saveButton.enabled = [self profileInformationIsValid];
 
@@ -82,25 +87,39 @@
 }
 
 - (void)startObserving {
-    for (NSString *key in [RMSProfile attributes]) {
-        [self.profile addObserver:self forKeyPath:key options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew context:NULL];
+    if (!self.isObservingChanges) {
+        for (NSString *key in [RMSProfile attributes]) {
+            [self.profile addObserver:self
+                           forKeyPath:key
+                              options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew
+                              context:RMSProfileViewControllerContext];
+        }
+        self.isObservingChanges = YES;
     }
 }
 
 - (void)stopObserving {
-    for (NSString *key in [RMSProfile attributes]) {
-        [self.profile removeObserver:self forKeyPath:key];
+    if (self.isObservingChanges) {
+        for (NSString *key in [RMSProfile attributes]) {
+            [self.profile removeObserver:self forKeyPath:key];
+        }
+        self.isObservingChanges = NO;
     }
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    self.title = self.profile.fullName;
-    [self updateSaveButtonStatus];
-
-    NSUInteger saveSectionIndex = [[self.tableView indexPathForCell:self.saveButton] section];
-
-    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:saveSectionIndex]
-                  withRowAnimation:UITableViewRowAnimationNone];
+    if (context == RMSProfileViewControllerContext) {
+        DLog(@"observing value for keyPath: %@", keyPath);
+        self.title = self.profile.fullName;
+        [self updateSaveButtonStatus];
+        
+        NSUInteger saveSectionIndex = [self.sections indexOfObject:self.saveSection];
+        
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:saveSectionIndex]
+                      withRowAnimation:UITableViewRowAnimationNone];
+    } else {
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
 }
 
 - (void)updateSaveButtonStatus {
