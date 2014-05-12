@@ -106,10 +106,19 @@
 /*!
  \brief Synchronizes the view hierarchy of the receiver with it's internal state.
 
- This message is sent to RMSFormCells by an RMSFormViewController immediately after instantiation.
- RMSFormCell subclasses must first call super when extending this method.
+ Subclasses should implement this method to synchronize the state of their view hierarchy with
+ their internal state. The default implementation does nothing.
  */
 - (void)synchronizeView;
+
+/*!
+ \brief Sent to a cell after all properties specified in a form descriptor have been set.
+
+ This message is sent to RMSFormCells by an RMSFormViewController after all properties 
+ specified for the cell in the form descriptor have been set. RMSFormCell subclasses must first
+ call super when extending this method.
+ */
+- (void)awakeFromFormDescriptor;
 
 @end
 

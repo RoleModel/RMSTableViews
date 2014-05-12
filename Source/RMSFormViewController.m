@@ -220,7 +220,7 @@ NSString * const RMSFormKeyEnabled = @"enabled";
     [self setProperties:formCell withRawDictionary:rawDictionary];
 
     formCell.delegate = self;
-    [formCell synchronizeView];
+    [formCell awakeFromFormDescriptor];
 
     return formCell;
 }
@@ -255,6 +255,7 @@ NSString * const RMSFormKeyEnabled = @"enabled";
             sectionClass = sectionClass ? sectionClass : [RMSFormSection class];
             RMSFormSection *section = [[sectionClass alloc] initWithRows:rows];
             [self setProperties:section withRawDictionary:rawSection];
+            [section awakeFromFormDescriptor];
 
             [self bindObject:section dictionary:rawSection];
             

@@ -66,6 +66,10 @@
 
 }
 
+- (void)awakeFromFormDescriptor {
+    
+}
+
 - (void)respondToSelection {
 
 }

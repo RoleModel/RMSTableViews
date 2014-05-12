@@ -39,4 +39,13 @@
 - (id)initWithRows:(NSArray *)rows;
 - (NSInteger)indexOfCell:(UITableViewCell *)cell;
 
+/*!
+ \brief Sent to a section after all properties specified in a form descriptor have been set.
+
+ This message is sent to RMSFormSections by an RMSFormViewController after all properties
+ specified for the section in the form descriptor have been set. RMSFormSection subclasses must 
+ first call super when extending this method.
+ */
+- (void)awakeFromFormDescriptor;
+
 @end

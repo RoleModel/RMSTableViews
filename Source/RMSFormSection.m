@@ -46,4 +46,8 @@
     return [self.rows objectAtIndex:index];
 }
 
+- (void)awakeFromFormDescriptor {
+
+}
+
 @end

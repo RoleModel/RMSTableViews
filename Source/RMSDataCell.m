@@ -23,18 +23,60 @@
 
 #import "RMSDataCell.h"
 
+static void * RMSDataCellObservingContext = &RMSDataCellObservingContext;
 
 
 @interface RMSDataCell ()
+
+@property (nonatomic) BOOL isObservingValue;
 
 @end
 
 
 @implementation RMSDataCell
 
+- (void)startObservingValue {
+    if (!self.isObservingValue && self.keyPath) {
+        [self.representedObject addObserver:self
+                                 forKeyPath:self.keyPath
+                                    options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew
+                                    context:RMSDataCellObservingContext];
+        self.isObservingValue = YES;
+    }
+}
+
+- (void)stopObservingValue {
+    if (self.isObservingValue && self.keyPath) {
+        [self.representedObject removeObserver:self
+                                    forKeyPath:self.keyPath
+                                       context:RMSDataCellObservingContext];
+        self.isObservingValue = NO;
+    }
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    if (context == RMSDataCellObservingContext) {
+        [self synchronizeView];
+    } else {
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
+}
+
+- (void)awakeFromFormDescriptor {
+    [super awakeFromFormDescriptor];
+    self.isObservingValue = NO;
+
+    [self startObservingValue];
+}
+
+- (void)dealloc {
+    [self stopObservingValue];
+}
+
 - (void)setValue:(id)value {
+    [self stopObservingValue];
     [self.representedObject setValue:value forKeyPath:self.keyPath];
-    [self synchronizeView];
+    [self startObservingValue];
 }
 
 - (id)value {

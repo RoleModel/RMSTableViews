@@ -13,6 +13,14 @@
            }
            },
            {
+           "className": "RMSSwitchCell",
+           "properties": {
+           "keyPath": "awesome",
+           "labelText": "Really?",
+           "representedObject": ":self"
+           }
+           },
+           {
            "className": "RMSArrayPickerCell",
            "properties": {
            "choices": [
