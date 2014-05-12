@@ -39,7 +39,7 @@
 
 - (void)synchronizeView {
     UISwitch *switchView = (UISwitch *)self.accessoryView;
-    switchView.on = [self.value boolValue];
+    [switchView setOn:[self.value boolValue] animated:YES];
 }
 
 - (void)switchAction:(id)sender {
